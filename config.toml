@@ -1,0 +1,15 @@
+baseURL = "http://danielcardoza.com"
+languageCode = "en-us"
+title = "Daniel Cardoza"
+theme = "manis"
+copyright = "&copy; 2017 Daniel Cardoza"
+publishDir = "docs"
+
+[params]
+  # 404 Configuration
+  head404 = "Sorry, I can find what you want."
+  sub404 = "Back to <a href='/'>Home</a>."
+
+  # Social media
+  github = "https://github.com/dang3r"
+  linkedin = "https://www.linkedin.com/in/dcardoza/"
