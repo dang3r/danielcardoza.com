@@ -7,10 +7,15 @@ copyright = "&copy; 2017 Daniel Cardoza"
 paginate = 10
 publishDir = "docs"
 
+[taxonomies]
+  tag = "tags"
+
 [params]
   debugCSS = false
   description = "Daniel Cardoza's home on the internet"
   themeAttrib = true
+  dateFmt = "Jan 02, 2006"
+  colorTheme = "#ff8181"
 
   # 404 Configuration
   head404 = "Sorry, I can find what you want."
