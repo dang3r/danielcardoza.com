@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Daniel Cardoza</copyright>
-    <lastBuildDate>Tue, 14 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://danielcardoza.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Blog</title>
       <link>http://danielcardoza.com/tags/blog/</link>
-      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>http://danielcardoza.com/tags/blog/</guid>
       <description></description>
@@ -27,6 +27,15 @@
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>http://danielcardoza.com/tags/introduction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>http://danielcardoza.com/tags/project/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/tags/project/</guid>
       <description></description>
     </item>
     

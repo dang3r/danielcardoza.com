@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Daniel Cardoza</title>
-    <link>http://danielcardoza.com/tags/blog/</link>
-    <description>Recent content in Blog on Daniel Cardoza</description>
+    <title>Project on Daniel Cardoza</title>
+    <link>http://danielcardoza.com/tags/project/</link>
+    <description>Recent content in Project on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Daniel Cardoza</copyright>
     <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://danielcardoza.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://danielcardoza.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,17 +21,6 @@
       <description>Overview I recently had a problem where I wanted to verify that a website:
  did not link to a given website on a blacklist did not return non 2XX status codes for a given route  Although there are many utilities you can probably piece together to solve this problem, I decided to make my own utility Cerca (which is Catalan for search).
 Problem Given a website URL, search the website for all external and internal links.</description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>http://danielcardoza.com/blog/introduction/</link>
-      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://danielcardoza.com/blog/introduction/</guid>
-      <description>Introduction Welcome to my blog!
-This site was created and powered by the following:
- Hugo for static site generation Manis for the website theme Github Pages for hosting  Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
     </item>
     
   </channel>

@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Cerca : Search a website&#39;s links</title>
+      <link>http://danielcardoza.com/blog/cerca/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/blog/cerca/</guid>
+      <description>Overview I recently had a problem where I wanted to verify that a website:
+ did not link to a given website on a blacklist did not return non 2XX status codes for a given route  Although there are many utilities you can probably piece together to solve this problem, I decided to make my own utility Cerca (which is Catalan for search).
+Problem Given a website URL, search the website for all external and internal links.</description>
+    </item>
+    
+    <item>
       <title>Introduction</title>
       <link>http://danielcardoza.com/blog/introduction/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
