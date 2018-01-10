@@ -13,7 +13,7 @@ publishDir = "docs"
 [params]
   debugCSS = false
   description = "Daniel Cardoza's home on the internet"
-  themeAttrib = true
+  themeAttrib = false
   dateFmt = "Jan 02, 2006"
   colorTheme = "#ff8181"
 
