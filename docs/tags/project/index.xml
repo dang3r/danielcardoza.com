@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Daniel Cardoza</copyright>
-    <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://danielcardoza.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jenophone : SMS forwarder using Twilio</title>
+      <link>http://danielcardoza.com/blog/jenophone/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/blog/jenophone/</guid>
+      <description>Overview When I moved to California after graduation, it became difficult to easily communicate with my girlfriend in Canada because of telecom issues.
+The crux of the problem was the following:
+ My phone plan has unlimited data and unlimited texting to US, Canada phone numnbers. My girlfriend&amp;rsquo;s phone plan had limited data (thank you Canadian telecoms) and only had unlimited texting in Canada.  I wanted to make communication easier between us, so I decided to make my own SMS forwarding service using Twilio.</description>
+    </item>
     
     <item>
       <title>Cerca : Search a website&#39;s links</title>
