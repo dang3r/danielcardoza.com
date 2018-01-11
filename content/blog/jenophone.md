@@ -16,7 +16,7 @@ communicate with my girlfriend in Canada because of telecom issues.
 The crux of the problem was the following:
 
 - My phone plan has unlimited data and unlimited texting to US, Canada phone
-  numnbers.
+  numbers.
 - My girlfriend's phone plan had limited data (thank you Canadian telecoms) and
   only had unlimited texting in Canada.
 
@@ -50,7 +50,7 @@ regarding texts.
 
 I required a web server that could listen to these webhook events and provide
 the SMS forwarding capabilties I described above. I implemented this using
-`Golang` and the stand library. The code can be seen
+`Golang` and the standard library. The code can be seen
 [here](https://github.com/dang3r/jenophone).
 
 Starting Jenophone is as simple as:
