@@ -33,17 +33,13 @@ and [Nokogiri](https://github.com/sparklemotion/nokogiri) for parsing HTML.
 I created a small library called `Wikio` containing a couple of functions that
 would make solving the problem straightforward. 
 
-My first problem was:
-
-> How do I retrieve the wikipedia page for a given term?
+#### Problem 1 : How do I retrieve the wikipedia page for a given term?
 
 Wikipedia provides a nice API for retrieving this information. You can view more
 documentation at
 [MediaWiki](https://www.mediawiki.org/wiki/API:Main_page#The_endpoint).
 
-The second and more involved problem was:
-
-> How do I retrieve the first link on a given Wikipedia article?
+#### Problem 2 : How do I retrieve the first link on a given Wikipedia article?
 
 First, I had to find the corresponding HTML for a page.
 
