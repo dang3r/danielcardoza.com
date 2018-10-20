@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel Cardoza</title>
+    <link>http://danielcardoza.com/</link>
+    <description>Recent content on Daniel Cardoza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://danielcardoza.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wikireducer : Following Wikipedia links</title>
+      <link>http://danielcardoza.com/posts/wikio/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/posts/wikio/</guid>
+      <description>Overview I came back from the gym last week and a few of my friend&amp;rsquo;s made the following claim:
+ Following the first link of a Wikipedia article always leads to philosophy.
+ It was a very strong claim, but one that can be verified easily.
+Solution My previous scraping projects and linksearchers have been exclusively in Python. I love Python, but I have been exposed to Ruby over the past months and decided this project would be a good fit.</description>
+    </item>
+    
+    <item>
+      <title>Jenophone : SMS forwarder using Twilio</title>
+      <link>http://danielcardoza.com/posts/jenophone/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/posts/jenophone/</guid>
+      <description>Overview When I moved to California after graduation, it became difficult to easily communicate with my girlfriend in Canada because of telecom issues.
+The crux of the problem was the following:
+ My phone plan has unlimited data and unlimited texting to US, Canada phone numbers. My girlfriend&amp;rsquo;s phone plan had limited data (thank you Canadian telecoms) and only had unlimited texting in Canada.  I wanted to make communication easier between us, so I decided to make my own SMS forwarding service using Twilio.</description>
+    </item>
+    
+    <item>
+      <title>Cerca : Search a website&#39;s links</title>
+      <link>http://danielcardoza.com/posts/cerca/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/posts/cerca/</guid>
+      <description>Overview I recently had a problem where I wanted to verify that a website:
+ did not link to a given website on a blacklist did not return non 2XX status codes for a given route  Although there are many utilities you can probably piece together to solve this problem, I decided to make my own utility Cerca (which is Catalan for search).
+Problem Given a website URL, search the website for all external and internal links.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://danielcardoza.com/posts/introduction/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/posts/introduction/</guid>
+      <description>Introduction Welcome to my blog!
+This site was created and powered by the following:
+ Hugo for static site generation Manis for the website theme Github Pages for hosting  Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>http://danielcardoza.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/about/</guid>
+      <description>I am a full stack software engineering currently residing in Palo Alto.
+Thanks for reading!</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://danielcardoza.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://danielcardoza.com/contact/</guid>
+      <description>If you would like to get in contact, you can ping me at dan [at] danielcardoza dot com.</description>
+    </item>
+    
+  </channel>
+</rss>
