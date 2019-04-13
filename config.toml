@@ -1,107 +1,73 @@
-baseurl = "https://danielcardoza.com"
+baseURL = "https://danielcardoza.com"
+languageCode = "en"
+
 title = "Daniel Cardoza"
+theme = "allinone"
 
-theme = "coder"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
 
-languagecode = "en"
-
-paginate = 20
+enableEmoji = true
+hasCJKLanguage = false
+summaryLength = 100
+paginate = 5
 canonifyurls = true
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+pygmentsuseclasses  = true
 
-disqusShortname = "dcardoza"
+googleAnalytics = "UA-138252403-1"
+
+[permalinks]
+    blog    = "blog/:year-:month/:slug/"
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "Blog"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "blog/"  
+
+  [[menu.main]]
+    name                   = "About"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "about/"
 
 [params]
     author = "Daniel Cardoza"
-    description = "Daniel Cardoza's personal website"
+    description = ["Hack on tech.", "Lift weights.", "Profit."]
     keywords = "blog,developer,personal"
     info = "Full stack and cloud engineering"
-    avatarurl = "images/avatar.png"
+    avatar = "images/avatar.jpg"
     footercontent = ""
+    welcome_head = "Blog"
+    welcome_word = ""
 
     dateformat = "January 2, 2006"
+    dateformfull             = "2006-01-02  Monday  15:04:05"
 
-    hideCredits = false
-    hideCopyright = false
 
-    # Git Commit in Footer, uncomment the line below to enable it.
-    commit = "https://github.com/luizdepra/hugo-coder/tree/"
+    slidesDirPath            = "static/header-slides" # path to image in local dir (path for hugo)
+    slidesDirPathURL         = "header-slides"    # path to image in static dir (for static pages)
 
-    rtl = false
+    # Highlighting
+    highlightjs = true
 
-    # Custom CSS
-    custom_css = []
+    googleAnalytics = "UA-138252403-1"
+    # latex
+    katex = true
 
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/dang3r"
-[[params.social]]
-    name = "linkedIn"
-    icon = "fab fa-linkedin"
-    weight = 2
-    url = "https://www.linkedin.com/in/dcardoza/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/_dcardoza"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium"
-    weight = 5
-    url = "https://medium.com/@danielpcardoza"
-
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
-#[[menu.main]]
-#    name = "Projects"
-#    weight = 3
-#    url = "/projects/"
-[[menu.main]]
-    name = "Contact me"
-    weight = 5
-    url = "/contact/"
-
-[languages]
-    [languages.en]
-        languagename = "English" # The language name to be displayed in the selector.
-        title = "Daniel Cardoza"
-
-        # You can configure the theme parameter for each language.
-        [languages.en.params]
-        author = "Daniel Cardoza"
-        info = "Full stack and cloud engineer"
-        description = "Daniel Cardoza's personal website"
-        keywords = "blog,developer,personal"
-
-        [languages.en.menu] # It is possible to change the menu too.
-
-        [[languages.en.menu.main]]
-        name = "About"
-        weight = 1.0
-        url = "/about/"
-
-        [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 2.0
-        url = "/posts/"
-
-#        [[languages.en.menu.main]]
-#        name = "Projects"
-#        weight = 3
-#        url = "/projects/"
-        [[languages.en.menu.main]]
-        name = "Contact me"
-        weight = 5
-        url = "/contact/"
+    # links
+    email                    = "dan@danielcardoza.com"
+    github                   = "//github.com/dang3r"
+    linkedin                 = "//linkedin.com/in/dcardoza"
+    twitter                  = "//twitter.com/_dcardoza" 
+    instagram                = "//instagram.com/dancards"
+    include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
