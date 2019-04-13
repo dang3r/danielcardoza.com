@@ -42,7 +42,7 @@ googleAnalytics = "UA-138252403-1"
 
 [params]
     author = "Daniel Cardoza"
-    description = ["Hack on tech.", "Lift weights.", "Profit."]
+    description = ["Hack on tech.", "Lift weights.", "Grow."]
     keywords = "blog,developer,personal"
     info = "Full stack and cloud engineering"
     avatar = "images/avatar.jpg"

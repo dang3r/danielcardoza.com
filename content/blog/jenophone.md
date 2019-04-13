@@ -25,6 +25,8 @@ SMS forwarding service using Twilio.
 
 ## Solution
 
+My girlfriend's name is Jennifer, hence _Jenophone_.
+
 Twilio is a company that provides programmable sms, voice and other communication
 APIs.  One key feature is they allow users to register a phone number in a given
  country and hook into it via their APIs.
@@ -70,7 +72,7 @@ Terraform configuration in a future PR to ease the infrastructure work.
 
 This project was intended to solve a real world problem of mine, but to also
 gain experience with the Twilio service. Friends of mine had used it extensively
-for their Waterloo Fourth Year Design Project (FYDP) and loved its simplicity.
+for their Waterloo Fourth Year Design Project ([FYDP](https://uwaterloo.ca/capstone-design/)) and loved its simplicity.
 
 I imagine there are free or less costly services than Twilio for performing this.
 However, it was a fun little project to work on and gain experience with Twilio.

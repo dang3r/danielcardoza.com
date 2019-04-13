@@ -32,7 +32,8 @@ Solution My previous scraping projects and linksearchers have been exclusively i
       <description>Overview When I moved to California after graduation, it became difficult to easily communicate with my girlfriend in Canada because of telecom issues.
 The crux of the problem was the following:
  My phone plan has unlimited data and unlimited texting to US, Canada phone numbers. My girlfriend&amp;rsquo;s phone plan had limited data (thank you Canadian telecoms) and only had unlimited texting in Canada.  I wanted to make communication easier between us, so I decided to make my own SMS forwarding service using Twilio.
-Solution Twilio is a company that provides programmable sms, voice and other communication APIs. One key feature is they allow users to register a phone number in a given country and hook into it via their APIs.</description>
+Solution My girlfriend&amp;rsquo;s name is Jennifer, hence Jenophone.
+Twilio is a company that provides programmable sms, voice and other communication APIs.</description>
     </item>
     
     <item>
