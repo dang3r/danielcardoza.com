@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://danielcardoza.com/blog/2019-05/clickupy-api-fuse-for-clickup/</loc>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://danielcardoza.com/blog/2018-01/wikireducer-following-wikipedia-links/</loc>
     <lastmod>2018-01-31T00:00:00+00:00</lastmod>
   </url>
@@ -29,13 +34,13 @@
   
   <url>
     <loc>https://danielcardoza.com/tags/blog/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://danielcardoza.com/blog/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,7 +51,13 @@
   
   <url>
     <loc>https://danielcardoza.com/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://danielcardoza.com/tags/fuse/</loc>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -58,7 +69,13 @@
   
   <url>
     <loc>https://danielcardoza.com/tags/project/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://danielcardoza.com/tags/python/</loc>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,7 +86,7 @@
   
   <url>
     <loc>https://danielcardoza.com/tags/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

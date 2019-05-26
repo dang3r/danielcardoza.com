@@ -6,10 +6,21 @@
     <description>Recent content in Blog on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://danielcardoza.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Clickupy - API &#43; FUSE for Clickup</title>
+      <link>https://danielcardoza.com/blog/2019-05/clickupy-api-fuse-for-clickup/</link>
+      <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielcardoza.com/blog/2019-05/clickupy-api-fuse-for-clickup/</guid>
+      <description>TL:DR pip install clickupy / https://github.com/dang3r/clickupy
+Over the past few years, I have used many different project management tools. JIRA has been a consistent one, and the tool with the most name recognition. Trello is a very lightweight alternative, and the the one I personally use. Redbooth is another big player and I&amp;rsquo;ve used it heavily (especially while working there!). Wrike and Asana are a few others I&amp;rsquo;ve encountered every now and then.
+It was surprising to learn about Clickup, which I have started to use at work. Largely similar to the other solutions provided, I find it strikes a nice balance between being lightweight and powerful.</description>
+    </item>
     
     <item>
       <title>Wikireducer : Following Wikipedia links</title>
