@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on Daniel Cardoza</title>
+    <link>https://danielcardoza.com/tags/cloud/</link>
+    <description>Recent content in Cloud on Daniel Cardoza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://danielcardoza.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stratocumulus.cloud</title>
+      <link>https://danielcardoza.com/blog/2019-06/stratocumulus.cloud/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielcardoza.com/blog/2019-06/stratocumulus.cloud/</guid>
+      <description>TL:DR https://stratocumulus.cloud
+Top level domains (TLD) Every so often, I encounter a new top level domain (TLD). TLDs are at the topmost level of domains. A few of the most common are .com, .org, .net and if you are a trendy startup, .io. You can retrieve a full list of TLDs on wikipedia.
+Below are some of my favourite TLDs with various subdomains.
+ .ninja  coding.ninja sneaky.ninja food.ninja  .rocks  exercise.rocks igneous.rocks ilove.rocks  .life  thegood.life theeasy.life simple.life  .news  fake.news real.news thegood.news   When a new TLD comes out, most of the interesting domains are snatched up quite quickly.</description>
+    </item>
+    
+  </channel>
+</rss>
