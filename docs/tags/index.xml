@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Blog</title>
+      <title>blog</title>
       <link>https://danielcardoza.com/tags/blog/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Cloud</title>
+      <title>cloud</title>
       <link>https://danielcardoza.com/tags/cloud/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -30,25 +30,7 @@
     </item>
     
     <item>
-      <title>Fuse</title>
-      <link>https://danielcardoza.com/tags/fuse/</link>
-      <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielcardoza.com/tags/fuse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>https://danielcardoza.com/tags/introduction/</link>
-      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielcardoza.com/tags/introduction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Project</title>
+      <title>project</title>
       <link>https://danielcardoza.com/tags/project/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -57,11 +39,29 @@
     </item>
     
     <item>
-      <title>Python</title>
+      <title>fuse</title>
+      <link>https://danielcardoza.com/tags/fuse/</link>
+      <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielcardoza.com/tags/fuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
       <link>https://danielcardoza.com/tags/python/</link>
       <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://danielcardoza.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>introduction</title>
+      <link>https://danielcardoza.com/tags/introduction/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielcardoza.com/tags/introduction/</guid>
       <description></description>
     </item>
     
