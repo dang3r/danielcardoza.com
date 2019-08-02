@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://danielcardoza.com/blog/" />
 
-<meta property="og:updated_time" content="2019-06-16T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-07-31T00:00:00&#43;00:00"/>
 
 
   <title>
@@ -384,6 +384,8 @@
 
   
 
+  
+
 
 
 
@@ -404,10 +406,10 @@
         
         
         
-            <li><a href="https://danielcardoza.com/tags/blog" role="button"><span>blog (6)</span></a></li>
+            <li><a href="https://danielcardoza.com/tags/blog" role="button"><span>blog (7)</span></a></li>
           
         
-            <li><a href="https://danielcardoza.com/tags/project" role="button"><span>project (5)</span></a></li>
+            <li><a href="https://danielcardoza.com/tags/project" role="button"><span>project (6)</span></a></li>
           
         
             <li><a href="https://danielcardoza.com/tags/cloud" role="button"><span>cloud (1)</span></a></li>
@@ -455,7 +457,7 @@
               
                 <div class="px-2 middot"></div>
                 <div>
-                  6 posts
+                  7 posts
                 </div>
               
             </div>
@@ -512,6 +514,61 @@
 </ul>
 
           </div>
+
+          
+              <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://danielcardoza.com/blog/2019-07/aws-manifest/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">aws-manifest</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>Jul 31, 2019</li>
+        
+    
+        
+          <li class="middot"></li>
+          <li>2 minutes read</li>
+        
+      </ul>
+    </div>
+    
+
+    
+      TL:DR pip install aws-manifest / https://github.com/dang3r/aws-manifest
+I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and actions that could be called on them. I wanted to answer questions such as “What are all of the api actions that can be done for ec2?“.
+There is no API for doing so from AWS, so I started looking for other options. Some projects scrape the AWS documentation and extract the data from the markup. This is how projects like https://iam.cloudonaut.io/ work. You can see the code they use for scraping and parsing in their github repo here.......
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+      
+    </div>
+   
+    <div>
+      
+        
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://danielcardoza.com/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://danielcardoza.com/tags/blog" role="button">blog </a></li>
+      
+    
+      <li><a href="https://danielcardoza.com/tags/project" role="button">project </a></li>
+      
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+</div>
 
           
               <div class="post-wrapper white-bg post-card">
@@ -714,63 +771,6 @@ The crux of the problem was the following:
  My phone plan has unlimited data and unlimited texting to US, Canada phone numbers. My girlfriend’s phone plan had limited data (thank you Canadian telecoms) and only had unlimited texting in Canada.  I wanted to make communication easier between us, so I decided to make my own SMS forwarding service using Twilio.
 Solution My girlfriend’s name is Jennifer, hence Jenophone.
 Twilio is a company that provides programmable sms, voice and other communication APIs.......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-      
-    </div>
-   
-    <div>
-      
-        
-<div class="li-x div-x post-meta">
-  <li class="pr-0"><a href="https://danielcardoza.com/tags/"><i class="fas fa-tags"></i></a></li>
-  <div class="tags-sm">
-    
-      <li><a href="https://danielcardoza.com/tags/blog" role="button">blog </a></li>
-      
-    
-      <li><a href="https://danielcardoza.com/tags/project" role="button">project </a></li>
-      
-    
-  </div>
-</div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://danielcardoza.com/blog/2017-11/cerca-search-a-websites-links/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Cerca : Search a website&#39;s links</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>Nov 18, 2017</li>
-        
-    
-        
-          <li class="middot"></li>
-          <li>2 minutes read</li>
-        
-      </ul>
-    </div>
-    
-
-    
-      Overview I recently had a problem where I wanted to verify that a website:
- did not link to a given website on a blacklist did not return non 2XX status codes for a given route  Although there are many utilities you can probably piece together to solve this problem, I decided to make my own utility Cerca (which is Catalan for search).
-Problem Given a website URL, search the website for all external and internal links. Follow all internal links while not revisiting past links.
-Solution I decided to use the following approach:
- Initialize a queue with the website’s root (eg.......
     
   </a>
 

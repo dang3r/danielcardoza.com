@@ -6,10 +6,21 @@
     <description>Recent content in project on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://danielcardoza.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>aws-manifest</title>
+      <link>https://danielcardoza.com/blog/2019-07/aws-manifest/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielcardoza.com/blog/2019-07/aws-manifest/</guid>
+      <description>TL:DR pip install aws-manifest / https://github.com/dang3r/aws-manifest
+I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and actions that could be called on them. I wanted to answer questions such as &amp;ldquo;What are all of the api actions that can be done for ec2?&amp;ldquo;.
+There is no API for doing so from AWS, so I started looking for other options. Some projects scrape the AWS documentation and extract the data from the markup. This is how projects like https://iam.cloudonaut.io/ work. You can see the code they use for scraping and parsing in their github repo here.</description>
+    </item>
     
     <item>
       <title>Stratocumulus.cloud</title>
