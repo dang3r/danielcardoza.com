@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>aws-manifest | Daniel Cardoza</title>
+        <meta name="Description" content="A python package for retrieving information about aws api resources
+and the actions that can be performed on them"><meta property="og:title" content="aws-manifest" />
+<meta property="og:description" content="A python package for retrieving information about aws api resources
+and the actions that can be performed on them" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/aws-manifest/" />
+<meta property="article:published_time" content="2019-07-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-31T00:00:00+00:00" /><meta property="og:site_name" content="Daniel Cardoza" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="aws-manifest"/>
+<meta name="twitter:description" content="A python package for retrieving information about aws api resources
+and the actions that can be performed on them"/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="/aws-manifest/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="/stratocumulus/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.9a680b90260b5106d79f4075491ab31daafa7429eff686453c40b58357309649.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="><link rel="stylesheet" href="/lib/animate/animate.min.3c770e90f98eb21b0c042fafb49755af93306fbaf42e449524f94fae9fc83295.css" integrity="sha256-PHcOkPmOshsMBC&#43;vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="><link rel="stylesheet" href="/css/style.min.314a327b163e6b0d5ce2db67e83d0131cb84acdedde8e77d3cfba921503b70df.css" integrity="sha256-MUoyexY&#43;aw1c4ttn6D0BMcuErN7d6Od9PPupIVA7cN8=">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "aws-manifest",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/aws-manifest\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "blog, project","wordcount":  368 ,
+        "url": "\/aws-manifest\/","datePublished": "2019-07-31T00:00:00\x2b00:00","dateModified": "2019-07-31T00:00:00\x2b00:00","description": "A python package for retrieving information about aws api resources\nand the actions that can be performed on them"
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title animated bounceIn">
+            <a href="/">Daniel Cardoza</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/">Posts</a><a class="menu-item" href="/tags/">Tags</a><a class="menu-item" href="/about/">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title animated bounceIn">
+                <a href="/">Daniel Cardoza</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">aws-manifest</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author">
+                    <a class="author" href="/" rel="author" target="_blank">
+                        <i class="fas fa-user-circle fa-fw"></i>Daniel Cardoza
+                    </a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2019-07-31>2019-07-31</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>about 368 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>2 min&nbsp;</div>
+        </div><div class="content" id="content"><p><strong>TL:DR</strong> <code>pip install aws-manifest</code> / <a href="https://github.com/dang3r/aws-manifest">https://github.com/dang3r/aws-manifest</a></p>
+<p>I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and
+actions that could be called on them. I wanted to answer questions such as &ldquo;What
+are all of the api actions that can be done for ec2?&quot;.</p>
+<p>There is no API for doing so from AWS, so I started looking for other options.
+Some projects scrape the AWS documentation and extract the data from the markup.
+This is how projects like <a href="https://iam.cloudonaut.io/">https://iam.cloudonaut.io/</a> work. You can see the code they use
+for scraping and parsing in their github repo <a href="https://github.com/widdix/complete-aws-iam-reference/tree/master/tools" target="_blank" rel="noopener noreffer">here</a>
+.</p>
+<p>I haven&rsquo;t been able to find the thread on the aws forums, but I recall someone mentioning
+you could scrape or get the data from <a href="https://awspolicygen.s3.amazonaws.com/policygen.html">https://awspolicygen.s3.amazonaws.com/policygen.html</a>.
+Awspolicygen is a tool for generating aws policies for their services.</p>
+<p>This started my shallow dive into doing this.</p>
+<h3 id="extracting-a-manifest-of-aws-apis-and-services">Extracting a manifest of aws apis and services</h3>
+<p>The site looks exactly like you&rsquo;d expect.</p>
+<p><figure><a class="lightgallery" href="/images/s3_policygen.png" title="AWS-S3-PolicyGen" data-thumbnail="/images/s3_policygen.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/s3_policygen.png, /images/s3_policygen.png 1.5x, /images/s3_policygen.png 2x"
+            data-src="/images/s3_policygen.png"
+            alt="AWS-S3-PolicyGen" />
+    </a><figcaption class="image-caption">AWS-S3-PolicyGen</figcaption></figure>
+</p>
+<p>Looking at the assets it loads, I saw an interesting <code>policies.js</code> bundle.</p>
+<p><figure><a class="lightgallery" href="/images/s3_policygen_assets.png" title="AWS-S3-PolicyGen-Assets" data-thumbnail="/images/s3_policygen_assets.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/s3_policygen_assets.png, /images/s3_policygen_assets.png 1.5x, /images/s3_policygen_assets.png 2x"
+            data-src="/images/s3_policygen_assets.png"
+            alt="AWS-S3-PolicyGen-Assets" />
+    </a><figcaption class="image-caption">AWS-S3-PolicyGen-Assets</figcaption></figure>
+</p>
+<p>Inspecting its content, it is just assigning an object to a global variable.
+<figure><a class="lightgallery" href="/images/s3_policygen_asset_js.png" title="AWS-S3-PoliyGen-Js-Bundle" data-thumbnail="/images/s3_policygen_asset_js.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/s3_policygen_asset_js.png, /images/s3_policygen_asset_js.png 1.5x, /images/s3_policygen_asset_js.png 2x"
+            data-src="/images/s3_policygen_asset_js.png"
+            alt="AWS-S3-PoliyGen-Js-Bundle" />
+    </a><figcaption class="image-caption">AWS-S3-PoliyGen-Js-Bundle</figcaption></figure>
+</p>
+<p>If you remove the assignment to the variable, and put it into Jsonlint, you get
+a valid json file.</p>
+<p><figure><a class="lightgallery" href="/images/s3_polygen_jsonlint.png" title="Jsonlint" data-thumbnail="/images/s3_polygen_jsonlint.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/s3_polygen_jsonlint.png, /images/s3_polygen_jsonlint.png 1.5x, /images/s3_polygen_jsonlint.png 2x"
+            data-src="/images/s3_polygen_jsonlint.png"
+            alt="Jsonlint" />
+    </a><figcaption class="image-caption">Jsonlint</figcaption></figure>
+</p>
+<p>After analyzing the object, it had all of the necessary information to answer
+the question. I wanted to use ask these questions from Python, so I made
+<code>aws-manifest</code></p>
+<h3 id="aws-manifest">aws-manifest</h3>
+<p>The package provides an easy interface for getting access to the full manifest,
+and answering simple questions. It is able to either remotely pull down
+the latest version of the manifest, or use one bundled with the package.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="o">&gt;&gt;</span> <span class="kn">from</span> <span class="nn">awsmanifest</span> <span class="k">import</span> <span class="n">manifest</span><span class="p">,</span> <span class="n">AwsManifest</span>
+
+<span class="c1"># Retrieve the latest set of aws resources</span>
+<span class="o">&gt;&gt;</span> <span class="n">m</span> <span class="o">=</span> <span class="n">manifest</span><span class="p">()</span>
+<span class="o">&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="s2">&#34;serviceMap&#34;</span><span class="p">][</span><span class="s2">&#34;Amazon EC2&#34;</span><span class="p">][</span><span class="s2">&#34;Actions&#34;</span><span class="p">])</span>
+
+<span class="c1"># Retrieve the bundled local copy of aws resources</span>
+<span class="o">&gt;&gt;</span> <span class="n">m</span> <span class="o">=</span> <span class="n">manifest</span><span class="p">(</span><span class="n">local</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># For helper functions, use the `AwsManifest` class</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">AwsManifest</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">service_prefixes</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">actions</span><span class="p">(</span><span class="s2">&#34;Amazon EC2&#34;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">actions</span><span class="p">(</span><span class="s2">&#34;s3&#34;</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>After publishing to pypi and github, I decided to search for references
+to the javascript file. Lo and behold, <a href="https://github.com/search?p=1&amp;q=https%3A%2F%2Fawspolicygen.s3.amazonaws.com%2Fjs%2Fpolicies.js&amp;type=Code">https://github.com/search?p=1&amp;q=https%3A%2F%2Fawspolicygen.s3.amazonaws.com%2Fjs%2Fpolicies.js&amp;type=Code</a>.</p>
+<p>Its cool to see how common this workaround is.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>The article was updated on 2019-07-31</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/aws-manifest/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/aws-manifest/" data-title="aws-manifest" data-via="https://twitter.com/_dancards" data-hashtags="blog,project"><i class="fab fa-twitter fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/aws-manifest/" data-hashtag="blog"><i class="fab fa-facebook-square fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="/aws-manifest/"><i class="fab fa-linkedin fa-fw"></i>
+</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section><span>
+                        <a href="/tags/blog">
+                            <i class="fas fa-tag fa-fw"></i>blog
+                        </a>
+                    </span>&nbsp;<span>
+                        <a href="/tags/project">
+                            <i class="fas fa-tag fa-fw"></i>project
+                        </a>
+                    </span>&nbsp;</section>
+        <section>
+            <span><a href="javascript:window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/stratocumulus/" class="prev" rel="prev" title="Stratocumulus.cloud"><i class="fas fa-angle-left fa-fw"></i>Stratocumulus.cloud</a></div>
+</div>
+<div class="comment"></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer">LoveIt<i class="far fa-heart fa-fw"></i></a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Daniel Cardoza</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <span>&nbsp;</span>
+        </a><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.a0f67639490aba5d9a250783c0aa0ed69f83a6f151fb0d7b9fb617c9dbc54565.css" integrity="sha256-oPZ2OUkKul2aJQeDwKoO1p&#43;DpvFR&#43;w17n7YXydvFRWU="><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.54590077ee163035c3dd38dc034e9f6915ecbe680dd832f449afa21672cab116.js" integrity="sha256-VFkAd&#43;4WMDXD3TjcA06faRXsvmgN2DL0Sa&#43;iFnLKsRY="></script><script src="/lib/sharer/sharer.min.9c88f86c7f0820287113f6236200459832693656e80d7556cc80a93dfbd45813.js" integrity="sha256-nIj4bH8IIChxE/YjYgBFmDJpNlboDXVWzICpPfvUWBM="></script><script src="/lib/lazysizes/lazysizes.min.876b4c12685e991d88378c1b6dd3638fd2da0c88f3c24da1ada950c1f26604e1.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE="></script><script src="/lib/lightgallery/lightgallery.min.7a84c63ab156d68e4a7269487c9c65a4eb34b0c7864f2d3fd2b87f7c664480d3.js" integrity="sha256-eoTGOrFW1o5KcmlIfJxlpOs0sMeGTy0/0rh/fGZEgNM="></script><script src="/lib/lightgallery/lg-thumbnail.min.eab31af8f90835b7ab674b2dd2474841039bc01022aa312f80dde6e22fde58d7.js" integrity="sha256-6rMa&#43;PkINberZ0st0kdIQQObwBAiqjEvgN3m4i/eWNc="></script><script src="/lib/lightgallery/lg-zoom.min.e3a7e6bb4a69f8627654ba9e0ab1252971bcfb400538dbb0605db9a3342ce5b9.js" integrity="sha256-46fmu0pp&#43;GJ2VLqeCrElKXG8&#43;0AFONuwYF25ozQs5bk="></script><script src="/js/theme.min.1482fc67bfa2c3b8cebe476d0037b9321b5b7a8a1525b547b94143948be90e9e.js" integrity="sha256-FIL8Z7&#43;iw7jOvkdtADe5MhtbeooVJbVHuUFDlIvpDp4="></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-138252403-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+</html>

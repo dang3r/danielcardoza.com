@@ -1,0 +1,73 @@
+baseURL = "https://danielcardoza.com"
+languageCode = "en"
+
+title = "Daniel Cardoza"
+theme = "allinone"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+enableEmoji = true
+hasCJKLanguage = false
+summaryLength = 100
+paginate = 5
+canonifyurls = true
+
+pygmentsuseclasses  = true
+
+googleAnalytics = "UA-138252403-1"
+
+[permalinks]
+    blog    = "blog/:year-:month/:slug/"
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "Blog"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "blog/"  
+
+  [[menu.main]]
+    name                   = "About"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "about/"
+
+[params]
+    author = "Daniel Cardoza"
+    description = ["Hack on tech.", "Lift weights.", "Grow."]
+    keywords = "blog,developer,personal"
+    info = "Full stack and cloud engineering"
+    avatar = "images/avatar.jpg"
+    footercontent = ""
+    welcome_head = "Blog"
+    welcome_word = ""
+
+    dateformat = "January 2, 2006"
+    dateformfull             = "2006-01-02  Monday  15:04:05"
+
+
+    slidesDirPath            = "static/header-slides" # path to image in local dir (path for hugo)
+    slidesDirPathURL         = "header-slides"    # path to image in static dir (for static pages)
+
+    # Highlighting
+    highlightjs = true
+
+    googleAnalytics = "UA-138252403-1"
+    # latex
+    katex = true
+
+    # links
+    email                    = "dan@danielcardoza.com"
+    github                   = "//github.com/dang3r"
+    linkedin                 = "//linkedin.com/in/dcardoza"
+    twitter                  = "//twitter.com/_dcardoza" 
+    instagram                = "//instagram.com/dancards"
+    include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon

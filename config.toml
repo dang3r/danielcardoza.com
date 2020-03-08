@@ -1,73 +1,196 @@
-baseURL = "https://danielcardoza.com"
-languageCode = "en"
+baseURL = "/"
 
-title = "Daniel Cardoza"
-theme = "allinone"
+defaultContentLanguage = "en"
+theme = "LoveIt"
 
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-
+enableRobotsTXT = true
+enableGitInfo = true
 enableEmoji = true
-hasCJKLanguage = false
-summaryLength = 100
-paginate = 5
-canonifyurls = true
 
-pygmentsuseclasses  = true
-
-googleAnalytics = "UA-138252403-1"
-
-[permalinks]
-    blog    = "blog/:year-:month/:slug/"
-
-[taxonomies]
-  tag                      = "tags"
-  series                   = "series"
-  category                 = "categories"
-
-
-[menu]
-  [[menu.main]]
-    name                   = "Blog"
-    weight                 = -120
-    identifier             = "blog"
-    url                    = "blog/"  
-
-  [[menu.main]]
-    name                   = "About"
-    weight                 = -100
-    identifier             = "about"
-    url                    = "about/"
-
-[params]
-    author = "Daniel Cardoza"
-    description = ["Hack on tech.", "Lift weights.", "Grow."]
-    keywords = "blog,developer,personal"
-    info = "Full stack and cloud engineering"
-    avatar = "images/avatar.jpg"
-    footercontent = ""
-    welcome_head = "Blog"
-    welcome_word = ""
-
-    dateformat = "January 2, 2006"
-    dateformfull             = "2006-01-02  Monday  15:04:05"
-
-
-    slidesDirPath            = "static/header-slides" # path to image in local dir (path for hugo)
-    slidesDirPathURL         = "header-slides"    # path to image in static dir (for static pages)
-
-    # Highlighting
-    highlightjs = true
-
+[languages]
+  [languages.en]
+    weight = 1
+    # language code
+    languageCode = "en"
+    # website title
+    title = "Daniel Cardoza"
+    # language name
+    languageName = "English"
+    # default amount of posts in each pages
+    paginate = 10
+    # [UA-XXXXXXXX-X] google analytics code
     googleAnalytics = "UA-138252403-1"
-    # latex
-    katex = true
+    # date format
+    dateFormatToUse = "2006-01-02"
+    # Menu Info
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 3
+      [languages.en.params]
+        # site description
+        description = "About LoveIt Theme"
+        # site keywords
+        keywords = ["Theme", "Hugo"]
+        # site default theme ("light", "dark", "auto")
+        defaultTheme = "auto"
+        # Home Page Info
+        [languages.en.params.home]
+          # Home Page Profile
+          [languages.en.params.home.profile]
+            enable = true
+            # URL of avatar shown in home page
+            avatarURL = "/images/avatar.png"
+            # subtitle shown in home page
+            subtitle = "Software engineer, fitness enthusiast, Canadian."
+            # whether to use typeit animation for subtitle
+            typeit = true
+            # whether to show social links
+            social = true
+          # Home Page Posts
+          [languages.en.params.home.posts]
+            enable = true
+            # special amount of posts in each home posts page
+            paginate = 5
+            # default behavior when you don't set "hiddenFromHomePage" in front matter
+            defaultHiddenFromHomePage = false
+        # Social Info in home page
+        [languages.en.params.social]
+          GitHub = "https://github.com/dang3r"
+          Linkedin = "linkedin.com/in/dcardoza"
+          Twitter = "https://twitter.com/_dancards"
 
-    # links
-    email                    = "dan@danielcardoza.com"
-    github                   = "//github.com/dang3r"
-    linkedin                 = "//linkedin.com/in/dcardoza"
-    twitter                  = "//twitter.com/_dcardoza" 
-    instagram                = "//instagram.com/dancards"
-    include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
+        # Social Share Links in post page
+        [languages.en.params.share]
+          enable = true
+          Twitter = true
+          Facebook = true
+          Linkedin = true
+        
+[params]
+  version = "0.1.X"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = "https://github.com/dillonzq/LoveIt"
+  # Header info
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+  # Footer Copyright Info
+  [params.footer]
+    since = 2018
+  # Page config
+  [params.page]
+    # whether to use lightgallery in the page
+    lightgallery = true
+    # whether to show link to Raw Markdown content of the post
+    linkToMarkdown = true
+  # mathematical formulas (KaTeX)
+  [params.math]
+    enable = true
+    # default block delimiter is $$ ... $$ and \\[ ... \\]
+    blockLeftDelimiter = ""
+    blockRightDelimiter = ""
+    # default inline delimiter is $ ... $ and \\( ... \\)
+    inlineLeftDelimiter = ""
+    inlineRightDelimiter = ""
+    # KaTeX extension copy_tex
+    copyTex = true
+    # KaTeX extension mhchem
+    mhchem = true
+  # site verification code for Google/Bing/Yandex/Pinterest/Baidu
+
+  # Website Log Info just for SEO
+  [params.logo]
+    url = "logo.png"
+    width = 127
+    height = 40
+  # Website Image Info just for SEO
+  [params.image]
+    url = "cover.png"
+    width = 800
+    height = 600
+
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    style = "monokai"
+    tabWidth = 4
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# Author Info
+[author]
+  name = "Daniel Cardoza"
+  link = ""
+
+# Sitemap Info
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks Info (https://gohugo.io/content-management/urls/#permalinks)
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
+
+# Privacy Info (https://gohugo.io/about/hugo-and-gdpr/)
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+
+# Options to make output .md files
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# Options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
