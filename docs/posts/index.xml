@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using regex to find a path between two nodes in a graph</title>
+      <link>/regex-pathfinding/</link>
+      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/regex-pathfinding/</guid>
+      <description>Overview Regular expressions (regex) are a fun topic in computer science. I love revisiting the fundamentals every so often, so I read https://qntm.org/re_en recently. It is a great practical primer on regex. I&amp;rsquo;d recommend it to beginners and advanced engineers alike.
+Backreferences One of the most powerful regex techniques are backreferences . They allow you to match text that was previously matched by a capture group. You refer to previous groups using their index.</description>
+    </item>
     
     <item>
       <title>aws-manifest</title>
