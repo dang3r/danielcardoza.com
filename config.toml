@@ -68,9 +68,9 @@ enableEmoji = true
             defaultHiddenFromHomePage = false
         # Social Info in home page
         [languages.en.params.social]
-          GitHub = "https://github.com/dang3r"
-          Linkedin = "linkedin.com/in/dcardoza"
-          Twitter = "https://twitter.com/_dancards"
+          GitHub = "dang3r"
+          Linkedin = "dcardoza"
+          Twitter = "_dcardoza"
 
         # Social Share Links in post page
         [languages.en.params.share]

@@ -2,11 +2,14 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/tags/blog/</loc><lastmod>2020-03-08T10:10:59-07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/algorithm/</loc><lastmod>2020-07-22T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/blog/</loc><lastmod>2020-07-22T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/games/</loc><lastmod>2020-07-22T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/joto-installation/</loc><lastmod>2020-07-22T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/posts/</loc><lastmod>2020-07-22T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/</loc><lastmod>2020-07-22T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/tags/graph/</loc><lastmod>2020-03-08T10:10:59-07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/posts/</loc><lastmod>2020-03-08T10:10:59-07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/tags/regex/</loc><lastmod>2020-03-08T10:10:59-07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/tags/</loc><lastmod>2020-03-08T10:10:59-07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/regex-pathfinding/</loc><lastmod>2020-03-08T10:10:59-07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/aws-manifest/</loc><lastmod>2020-03-07T16:15:07-08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/tags/project/</loc><lastmod>2020-03-07T16:15:07-08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

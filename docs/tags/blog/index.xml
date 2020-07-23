@@ -6,10 +6,20 @@
     <description>Recent content in blog on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jewels of the Oracle : Installation</title>
+      <link>/joto-installation/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/joto-installation/</guid>
+      <description>Jewels of the Oracle 1995 One of the games my parents used to play in the 1990s was Jewels of the Oracle. It is a puzzle game set in ancient Mesopotamia consisting of 24 puzzles. They range from logical, geometric and lingustic puzzles.
+My mother was really interested in playing it again. The game came out in 1995, so playing it on modern hardware is difficult. We searched for various methods that were dead ends.</description>
+    </item>
     
     <item>
       <title>Using regex to find a path between two nodes in a graph</title>
