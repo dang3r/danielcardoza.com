@@ -38,7 +38,7 @@
                 "width":  800 ,
                 "height":  600 
             },"genre": "posts","keywords": "blog, regex, graph","wordcount":  680 ,
-        "url": "\/regex-pathfinding\/","datePublished": "2020-03-07T00:00:00\x2b00:00","dateModified": "2020-03-08T10:10:59-07:00","description": "Finding a path between two nodes in a DAG with Regex"
+        "url": "\/regex-pathfinding\/","datePublished": "2020-03-07T00:00:00\u002b00:00","dateModified": "2020-03-08T10:10:59-07:00","description": "Finding a path between two nodes in a DAG with Regex"
     }
     </script></head>
     <body><script>
@@ -146,7 +146,7 @@ of the vertices in the graph. For the graph above, one such ordering is is <code
 <p>Now that we encoded the graph into a string, we can use regular expressions to try and extract a path
 from it.</p>
 <h3 id="using-regex-to-extract-a-path">Using Regex to extract a path</h3>
-<p>To find a path from <code>a</code> to <code>j</code>, one of <code>a</code>'s edges must be used (<code>bcf</code>). Then, for the first edge chosen,
+<p>To find a path from <code>a</code> to <code>j</code>, one of <code>a</code>&rsquo;s edges must be used (<code>bcf</code>). Then, for the first edge chosen,
 that must also have an edge leading to another vertext which leads to <code>z</code>. We can represent this idea
 in regex. Assuming the length of the path is 2, we can use <code>a\w*(\w).*\s\1\w*j$</code>.</p>
 <p>Let&rsquo;s digest this:</p>
@@ -217,7 +217,7 @@ me dive deeper into regex and a bit of graph theory. Learning through problem so
     <div class="copyright"><div class="copyright-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer">LoveIt<i class="far fa-heart fa-fw"></i></a>
         </div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Daniel Cardoza</a></span></div>
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Daniel Cardoza</a></span></div>
     </div>
 </footer>
 </div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">

@@ -6,10 +6,16 @@
     <description>Recent content in blog on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Data Studio : Powerful and easy data visualization</title>
+      <link>/google-data-studio/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/google-data-studio/</guid>
+      <description>Overview Google Data Studio is a tool engineers and analysts can use to visualize and present data. It is the equivalent of using Excel or Google Sheets to generate graphs and plots but for data in different data stores (eg. Google BigQuery).
+I became acquainted with Data Studio through work. I had a large dataset and results from a very large processing job that I wanted to turn into a report.</description>
+    </item>
     
     <item>
       <title>Jewels of the Oracle : Installation</title>
@@ -38,7 +44,7 @@ Backreferences One of the most powerful regex techniques are backreferences . Th
       
       <guid>/aws-manifest/</guid>
       <description>TL:DR pip install aws-manifest / https://github.com/dang3r/aws-manifest
-I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and actions that could be called on them. I wanted to answer questions such as &amp;ldquo;What are all of the api actions that can be done for ec2?&amp;quot;.
+I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and actions that could be called on them. I wanted to answer questions such as &amp;ldquo;What are all of the api actions that can be done for ec2?&amp;rdquo;.
 There is no API for doing so from AWS, so I started looking for other options. Some projects scrape the AWS documentation and extract the data from the markup.</description>
     </item>
     

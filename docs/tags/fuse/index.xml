@@ -6,11 +6,7 @@
     <description>Recent content in fuse on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 May 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/fuse/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 26 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/fuse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clickupy - API &#43; FUSE for Clickup</title>
       <link>/clickup/</link>

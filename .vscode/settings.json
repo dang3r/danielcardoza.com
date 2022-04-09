@@ -1,0 +1,7 @@
+{
+    "[markdown]": {
+        "editor.rulers": [80],
+        "rewrap.autoWrap.enabled": true,
+        "rewrap.wrappingColumn": 80 
+      },
+}

@@ -6,10 +6,16 @@
     <description>Recent content in python on Daniel Cardoza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 May 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 16 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dollar Cost Averaging Bitcoin</title>
+      <link>/bitcoin-dollar-cost-average/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bitcoin-dollar-cost-average/</guid>
+      <description>Overview Bitcoin Prices 2020 The price of Bitcoin is encroaching upon it&amp;rsquo;s all time high of 20000 USD. In the last month, it has increased by 33%! I was curious to see how much you could have made by dollar cost averaging bitcoin. Luckily, with a little help from Yahoo Finance and Pandas this is easily done.
+How? Yahoo Finance has a webpage exposing historical data for Bitcoin and other currencies.</description>
+    </item>
     
     <item>
       <title>Clickupy - API &#43; FUSE for Clickup</title>

@@ -11,15 +11,14 @@ tags = [
 
 ![Jewels of the Oracle 1995](/images/jotw-game.jpeg)
 
-
 One of the games my parents used to play in the 1990s was Jewels of the Oracle.
 It is a puzzle game set in ancient Mesopotamia consisting of 24 puzzles. They range from logical, geometric
 and lingustic puzzles.
 
-My mother was really interested in playing it again. The game came out in 1995, so playing it 
+My mother was really interested in playing it again. The game came out in 1995, so playing it
 on modern hardware is difficult. We searched for various methods that were dead ends. It would not run properly
 on the software DOSBox used for running old games. Trying to play it on a Windows 7 machine via compatibility
-mode also failed. The last idea I had was to try and run it within a Virtual Machine. I eventually got it 
+mode also failed. The last idea I had was to try and run it within a Virtual Machine. I eventually got it
 to work, and have left the installation details below.
 
 # Prerequisites
