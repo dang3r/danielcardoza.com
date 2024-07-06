@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/blog/</loc>
+    <loc>//localhost:1313/tags/blog/</loc>
     <lastmod>2024-07-06T00:32:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/google-data-studio/</loc>
+    <loc>//localhost:1313/google-data-studio/</loc>
     <lastmod>2022-04-09T01:37:10-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2024-07-06T00:32:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/project/</loc>
+    <loc>//localhost:1313/tags/project/</loc>
     <lastmod>2022-04-09T01:37:10-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-07-06T00:32:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/tech/</loc>
+    <loc>//localhost:1313/tags/tech/</loc>
     <lastmod>2022-04-09T01:37:10-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/algorithm/</loc>
+    <loc>//localhost:1313/tags/algorithm/</loc>
     <lastmod>2022-04-09T01:37:10-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/games/</loc>
+    <loc>//localhost:1313/tags/games/</loc>
     <lastmod>2022-04-09T01:37:10-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/joto-installation/</loc>
+    <loc>//localhost:1313/joto-installation/</loc>
     <lastmod>2022-04-09T01:37:10-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/graph/</loc>
+    <loc>//localhost:1313/tags/graph/</loc>
     <lastmod>2024-07-06T00:32:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/regex/</loc>
+    <loc>//localhost:1313/tags/regex/</loc>
     <lastmod>2024-07-06T00:32:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/regex-pathfinding/</loc>
+    <loc>//localhost:1313/regex-pathfinding/</loc>
     <lastmod>2024-07-06T00:32:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/aws-manifest/</loc>
+    <loc>//localhost:1313/aws-manifest/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/cloud/</loc>
+    <loc>//localhost:1313/tags/cloud/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/stratocumulus/</loc>
+    <loc>//localhost:1313/stratocumulus/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/clickup/</loc>
+    <loc>//localhost:1313/clickup/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/fuse/</loc>
+    <loc>//localhost:1313/tags/fuse/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/python/</loc>
+    <loc>//localhost:1313/tags/python/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/wikio/</loc>
+    <loc>//localhost:1313/wikio/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/jenophone/</loc>
+    <loc>//localhost:1313/jenophone/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/cerca/</loc>
+    <loc>//localhost:1313/cerca/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/introduction/</loc>
+    <loc>//localhost:1313/tags/introduction/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/introduction/</loc>
+    <loc>//localhost:1313/introduction/</loc>
     <lastmod>2020-03-07T16:15:07-08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-07-06T00:35:12-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

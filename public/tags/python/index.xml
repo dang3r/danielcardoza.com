@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on </title>
-    <link>/tags/python/</link>
+    <link>//localhost:1313/tags/python/</link>
     <description>Recent content in Python on </description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 07 Mar 2020 16:15:07 -0800</lastBuildDate>
-    <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clickupy - API &#43; FUSE for Clickup</title>
-      <link>/clickup/</link>
+      <link>//localhost:1313/clickup/</link>
       <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
-      <guid>/clickup/</guid>
+      <guid>//localhost:1313/clickup/</guid>
       <description>TL:DR pip install clickupy / https://github.com/dang3r/clickupy&#xA;Over the past few years, I have used many different project management tools. JIRA has been a consistent one, and the tool with the most name recognition. Trello is a very lightweight alternative, and the the one I personally use. Redbooth is another big player and I&amp;rsquo;ve used it heavily (especially while working there!). Wrike and Asana are a few others I&amp;rsquo;ve encountered every now and then.</description>
     </item>
   </channel>

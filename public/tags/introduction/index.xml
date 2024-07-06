@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on </title>
-    <link>/tags/introduction/</link>
+    <link>//localhost:1313/tags/introduction/</link>
     <description>Recent content in Introduction on </description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 07 Mar 2020 16:15:07 -0800</lastBuildDate>
-    <atom:link href="/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>/introduction/</link>
+      <link>//localhost:1313/introduction/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>/introduction/</guid>
+      <guid>//localhost:1313/introduction/</guid>
       <description>Introduction Welcome to my blog!&#xA;This site was created and powered by the following:&#xA;Hugo for static site generation Manis for the website theme Github Pages for hosting Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
     </item>
   </channel>

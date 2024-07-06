@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on </title>
-    <link>/tags/blog/</link>
+    <link>//localhost:1313/tags/blog/</link>
     <description>Recent content in Blog on </description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 06 Jul 2024 00:32:25 -0400</lastBuildDate>
-    <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Data Studio : Powerful and easy data visualization</title>
-      <link>/google-data-studio/</link>
+      <link>//localhost:1313/google-data-studio/</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>/google-data-studio/</guid>
+      <guid>//localhost:1313/google-data-studio/</guid>
       <description>Overview Google Data Studio is a tool engineers and analysts can use to visualize and present data. It is the equivalent of using Excel or Google Sheets to generate graphs and plots but for data in different data stores (eg. Google BigQuery).&#xA;I became acquainted with Data Studio through work. I had a large dataset and results from a very large processing job that I wanted to turn into a report.</description>
     </item>
     <item>
       <title>Jewels of the Oracle : Installation</title>
-      <link>/joto-installation/</link>
+      <link>//localhost:1313/joto-installation/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/joto-installation/</guid>
+      <guid>//localhost:1313/joto-installation/</guid>
       <description>One of the games my parents used to play in the 1990s was Jewels of the Oracle. It is a puzzle game set in ancient Mesopotamia consisting of 24 puzzles. They range from logical, geometric and lingustic puzzles.&#xA;My mother was really interested in playing it again. The game came out in 1995, so playing it on modern hardware is difficult. We searched for various methods that were dead ends.</description>
     </item>
     <item>
       <title>Using regex to find a path between two nodes in a graph</title>
-      <link>/regex-pathfinding/</link>
+      <link>//localhost:1313/regex-pathfinding/</link>
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/regex-pathfinding/</guid>
+      <guid>//localhost:1313/regex-pathfinding/</guid>
       <description>Overview Regular expressions (regex) are a fun topic in computer science. I love revisiting the fundamentals every so often, so I read https://qntm.org/re_en recently. It is a great practical primer on regex. I&amp;rsquo;d recommend it to beginners and advanced engineers alike.&#xA;Backreferences One of the most powerful regex techniques are backreferences. They allow you to match text that was previously matched by a capture group. You refer to previous groups using their index.</description>
     </item>
     <item>
       <title>aws-manifest</title>
-      <link>/aws-manifest/</link>
+      <link>//localhost:1313/aws-manifest/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/aws-manifest/</guid>
+      <guid>//localhost:1313/aws-manifest/</guid>
       <description>TL:DR pip install aws-manifest / https://github.com/dang3r/aws-manifest&#xA;I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and actions that could be called on them. I wanted to answer questions such as &amp;ldquo;What are all of the api actions that can be done for ec2?&amp;rdquo;.&#xA;There is no API for doing so from AWS, so I started looking for other options. Some projects scrape the AWS documentation and extract the data from the markup.</description>
     </item>
     <item>
       <title>Stratocumulus.cloud</title>
-      <link>/stratocumulus/</link>
+      <link>//localhost:1313/stratocumulus/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/stratocumulus/</guid>
+      <guid>//localhost:1313/stratocumulus/</guid>
       <description>TL:DR https://stratocumulus.cloud&#xA;Top level domains (TLD) Every so often, I encounter a new top level domain (TLD). TLDs are at the topmost level of domains. A few of the most common are .com, .org, .net and if you are a trendy startup, .io. You can retrieve a full list of TLDs on wikipedia.&#xA;Below are some of my favourite TLDs with various subdomains.&#xA;.ninja coding.ninja sneaky.ninja food.ninja .rocks exercise.rocks igneous.rocks ilove.</description>
     </item>
     <item>
       <title>Clickupy - API &#43; FUSE for Clickup</title>
-      <link>/clickup/</link>
+      <link>//localhost:1313/clickup/</link>
       <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
-      <guid>/clickup/</guid>
+      <guid>//localhost:1313/clickup/</guid>
       <description>TL:DR pip install clickupy / https://github.com/dang3r/clickupy&#xA;Over the past few years, I have used many different project management tools. JIRA has been a consistent one, and the tool with the most name recognition. Trello is a very lightweight alternative, and the the one I personally use. Redbooth is another big player and I&amp;rsquo;ve used it heavily (especially while working there!). Wrike and Asana are a few others I&amp;rsquo;ve encountered every now and then.</description>
     </item>
     <item>
       <title>Wikireducer : Following Wikipedia links</title>
-      <link>/wikio/</link>
+      <link>//localhost:1313/wikio/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/wikio/</guid>
+      <guid>//localhost:1313/wikio/</guid>
       <description>Overview I came back from the gym last week and a few of my friend&amp;rsquo;s made the following claim:&#xA;Following the first link of a Wikipedia article always leads to philosophy&#xA;It was a very strong claim, but one that can be verified easily.&#xA;Solution My previous scraping projects and linksearchers have been exclusively in Python. I love Python, but I have been exposed to Ruby over the past months and decided this project would be a good fit.</description>
     </item>
     <item>
       <title>Jenophone : SMS forwarder using Twilio</title>
-      <link>/jenophone/</link>
+      <link>//localhost:1313/jenophone/</link>
       <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/jenophone/</guid>
+      <guid>//localhost:1313/jenophone/</guid>
       <description>Overview When I moved to California after graduation, it became difficult to easily communicate with my girlfriend in Canada because of telecom issues.&#xA;The crux of the problem was the following:&#xA;My phone plan has unlimited data and unlimited texting to US, Canada phone numbers. My girlfriend&amp;rsquo;s phone plan had limited data (thank you Canadian telecoms) and only had unlimited texting in Canada. I wanted to make communication easier between us, so I decided to make my own SMS forwarding service using Twilio.</description>
     </item>
     <item>
       <title>Cerca : Search a website&#39;s links</title>
-      <link>/cerca/</link>
+      <link>//localhost:1313/cerca/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>/cerca/</guid>
+      <guid>//localhost:1313/cerca/</guid>
       <description>Overview I recently had a problem where I wanted to verify that a website:&#xA;did not link to a given website on a blacklist did not return non 2XX status codes for a given route Although there are many utilities you can probably piece together to solve this problem, I decided to make my own utility Cerca (which is Catalan for search).&#xA;Problem Given a website URL, search the website for all external and internal links.</description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>/introduction/</link>
+      <link>//localhost:1313/introduction/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>/introduction/</guid>
+      <guid>//localhost:1313/introduction/</guid>
       <description>Introduction Welcome to my blog!&#xA;This site was created and powered by the following:&#xA;Hugo for static site generation Manis for the website theme Github Pages for hosting Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
     </item>
   </channel>
