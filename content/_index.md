@@ -13,7 +13,7 @@ Some errata:
 - Working for 🐇.ai on pushing the sota for medical imaging AI
 - Former competitive fps pcgamer
 - Avid lifter, hiker and public bikeshare rider
-- The only blog post I like is [this one on regex +tsort](http://danielcardoza.com/regex-pathfinding/)
+- The only blog post of mine I like is [this one on regex +tsort](http://danielcardoza.com/regex-pathfinding/)
 - Currently working on:
   - A custom clockface for my fitbit
   - Using style-transfer to generate wall-art for our apartment

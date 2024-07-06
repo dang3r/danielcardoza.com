@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Regex on dan&#39;s internet pad</title>
-    <link>//localhost:1313/tags/regex/</link>
+    <link>/tags/regex/</link>
     <description>Recent content in Regex on dan&#39;s internet pad</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Mar 2020 10:10:59 -0700</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jul 2024 00:32:25 -0400</lastBuildDate>
+    <atom:link href="/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using regex to find a path between two nodes in a graph</title>
-      <link>//localhost:1313/regex-pathfinding/</link>
+      <link>/regex-pathfinding/</link>
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/regex-pathfinding/</guid>
+      <guid>/regex-pathfinding/</guid>
       <description>Overview Regular expressions (regex) are a fun topic in computer science. I love revisiting the fundamentals every so often, so I read https://qntm.org/re_en recently. It is a great practical primer on regex. I&amp;rsquo;d recommend it to beginners and advanced engineers alike.&#xA;Backreferences One of the most powerful regex techniques are backreferences. They allow you to match text that was previously matched by a capture group. You refer to previous groups using their index.</description>
     </item>
   </channel>
