@@ -1,560 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
-  <meta name="author" content="Daniel Cardoza">
-  <meta name="description" content="[Hack on tech. Lift weights. Profit.]">
-  
-  <meta property="og:title" content="Tags" />
-<meta property="og:description" content="[Hack on tech. Lift weights. Profit.]" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://danielcardoza.com/tags/" />
-<meta property="og:updated_time" content="2018-01-31T00:00:00&#43;00:00"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tags | dan&#39;s internet pad</title>
+<meta name="title" content="Tags" />
+<meta name="description" content="About LoveIt Theme" />
+<meta name="keywords" content="algorithm,blog,cloud,fuse,games,graph,introduction,project,python,regex,tech," />
 
 
-  <title>
-  
-       Tags | Daniel Cardoza 
-  
-  </title>
-
-  <link rel="canonical" href="https://danielcardoza.com/tags/">
-
-  
-  
-
-  
-  <link href="https://danielcardoza.com/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
-
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
-  <link href="https://danielcardoza.com/css/font.css" rel="stylesheet"> 
-    
-  
-  <link href="https://danielcardoza.com/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
-  <link href="https://danielcardoza.com/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
-  <link href="https://danielcardoza.com/css/vendors/mdb/style.min.css" rel="stylesheet"> 
-  <link href="https://danielcardoza.com/css/main.css" rel="stylesheet">
+<meta property="og:url" content="//localhost:1313/tags/">
+  <meta property="og:site_name" content="dan&#39;s internet pad">
+  <meta property="og:title" content="Tags">
+  <meta property="og:description" content="About LoveIt Theme">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
 
-  
-  <link rel="shortcut icon"
-  
-      href="https://danielcardoza.com/images/avatar.jpg"
-  
-  >
 
 
-  
-  
-  <link href="https://danielcardoza.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="Daniel Cardoza" />
-  
-
-  <style type="text/css">
-      @media (min-width: 800px) and (max-width: 850px) {
-              .navbar:not(.top-nav-collapse) {
-                  background: #1C2331!important;
-              }
-          }
-  </style>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tags">
+  <meta name="twitter:description" content="About LoveIt Theme">
+      <meta name="twitter:site" content="@_dcardoza">
 
 
-  
-    
-    <link rel="stylesheet" href="https://danielcardoza.com/js/vendors/katex/katex.min.css">
-  
-  
 
-  
-    
-    <link rel="stylesheet" href="https://danielcardoza.com/css/vendors/highlight/github-gist.css">
-  
+
+  <meta itemprop="name" content="Tags">
+  <meta itemprop="description" content="About LoveIt Theme">
+  <meta itemprop="datePublished" content="2022-04-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2022-04-09T01:37:10-04:00">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/index.xml" title="dan's internet pad" />
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
 
 </head>
 
-  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+<body>
+  <header><a href="/" class="title">
+  <h2>dan&#39;s internet pad</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/posts/">Posts</a>
+
+<a href="/tags/">Tags</a>
+
+
+</nav>
+</header>
+  <main>
+<content>
   
-    
-    
-
-    
-      
-
-
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-
-      
-      <a class="navbar-brand" href="https://danielcardoza.com">
-          
-        <img class="avatar" src="https://danielcardoza.com" style="width: 40px!important;height: auto;"  class="d-inline-block align-top" alt="" >
-        
-        <strong> Daniel Cardoza</strong>
-      </a>
-
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        
-        <ul class="navbar-nav mr-auto ">
-          <li class="nav-item ">
-            <a class="nav-link" href="https://danielcardoza.com">Home</a>
-          </li>
-             
-            <li class="nav-item ">
-              <a class="nav-link" href="https://danielcardoza.com/blog/" >Blog  </a>
-            </li>
-          
-             
-            <li class="nav-item ">
-              <a class="nav-link" href="https://danielcardoza.com/about/" >About  </a>
-            </li>
-          
-          
-        </ul>
-
-      </div>
-
-    </div>
-  </nav>
+  <h3 style="margin-bottom:0">Filtering for "Tags"</h3>
+  <small>
+    <a href="/blog">Remove filter</a>
+  </small>
   
- 
-      
- 
-
-
-
-
-
-
-<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
-
-  
-  
-  
-
-  
-  <div class="carousel-inner" role="listbox">
+  <ul class="blog-posts">
     
-      
-
-        
-        <div class="carousel-item active">
-          <div class="view" style="background-image: url('https://danielcardoza.com/header-slides/IMG_20180505_152803924_HDR.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              
-              
-              
-
-            </div>
-            
-
-          </div>
-        </div>
-        
-      
+    <li>
+      <span>
+        <i>
+          <time datetime='2022-04-08' pubdate>
+            08 Apr, 2022
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/blog/">Blog</a>
+    </li>
     
-      
-
-        
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://danielcardoza.com/header-slides//IMG_20180609_141709377.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            
-
-            </div>
-            
-
-          </div>
-        </div>
-        
-      
+    <li>
+      <span>
+        <i>
+          <time datetime='2022-04-08' pubdate>
+            08 Apr, 2022
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/project/">Project</a>
+    </li>
     
-      
-
-        
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://danielcardoza.com/header-slides//IMG_20180712_172017391_HDR.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            
-
-            </div>
-            
-
-          </div>
-        </div>
-        
-      
+    <li>
+      <span>
+        <i>
+          <time datetime='2022-04-08' pubdate>
+            08 Apr, 2022
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/tech/">Tech</a>
+    </li>
     
-      
-
-        
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://danielcardoza.com/header-slides//IMG_20180907_165527989_HDR.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            
-
-            </div>
-            
-
-          </div>
-        </div>
-        
-      
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-07-22' pubdate>
+            22 Jul, 2020
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/algorithm/">Algorithm</a>
+    </li>
     
-      
-
-        
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://danielcardoza.com/header-slides//IMG_20181028_133814794_HDR.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            
-
-            </div>
-            
-
-          </div>
-        </div>
-        
-      
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-07-22' pubdate>
+            22 Jul, 2020
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/games/">Games</a>
+    </li>
     
-      
-
-        
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://danielcardoza.com/header-slides//fores.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            
-
-            </div>
-            
-
-          </div>
-        </div>
-        
-      
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-03-07' pubdate>
+            07 Mar, 2020
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/graph/">Graph</a>
+    </li>
     
-      
-
-        
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://danielcardoza.com/header-slides//received_2397222100289440.jpeg'); background-repeat: no-repeat; background-size: cover;">
-
-            
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            
-
-            </div>
-            
-
-          </div>
-        </div>
-        
-      
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-03-07' pubdate>
+            07 Mar, 2020
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/regex/">Regex</a>
+    </li>
     
-
-  
-  </div>
-  
-
-  
-  <div class="carousel-content text-center white-text wow fadeIn">
-    <div class="row mx-0 headfont mt-3 pt-4">
-      
-      <div class="col-12 col-sm-5 align-middle">
-        <a href="https://danielcardoza.com">
-          
-            <img class="pull-right avatar avatar-md" src="https://danielcardoza.com/images/avatar.jpg" alt="" >
-          
-        </a>
-      </div>
-      
-      <div class="col-12 col-sm-7 text-left pl-2">
-        <a href="https://danielcardoza.com">
-          <h1 class="mb-2 h1" style="font-weight: 300;" >
-            <strong>Daniel Cardoza</strong>
-          </h1>
-        </a>
-        
-
-             
-        <div class="mt-2" style="font-size: 1rem; color: white;">
-            
-              <a href="//github.com/dang3r" target="_blank" rel="noopener"><i class="fab fa-github pr-1" aria-hidden="true"></i></a>    
-            
-            
-              <a href="//linkedin.com/in/dcardoza" target="_blank" rel="noopener"><i class="fab fa-linkedin pr-1" aria-hidden="true"></i></a>
-            
-
-            
-
-            
-
-            
-                <a href="//twitter.com/_dcardoza" target="_blank" rel="noopener"><i class="fab fa-twitter pr-1" aria-hidden="true"></i></a>
-            
-
-            
-                <a href="//instagram.com/dancards" target="_blank" rel="noopener"><i class="fab fa-instagram pr-1" aria-hidden="true"></i></a>
-            
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-06-16' pubdate>
+            16 Jun, 2019
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/cloud/">Cloud</a>
+    </li>
     
-            
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-05-26' pubdate>
+            26 May, 2019
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/fuse/">Fuse</a>
+    </li>
     
-        
-            
-                <a href="mailto:dan@danielcardoza.com"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
-            
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-05-26' pubdate>
+            26 May, 2019
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/python/">Python</a>
+    </li>
     
-            
-                <a href="https://danielcardoza.com/tags/index.xml"><i class="fas fa-rss pr-1" aria-hidden="true"></i></a>
-            
-
-            
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
+    <li>
+      <span>
+        <i>
+          <time datetime='2017-11-14' pubdate>
+            14 Nov, 2017
+          </time>
+        </i>
+      </span>
+      <a href="//localhost:1313/tags/introduction/">Introduction</a>
+    </li>
+    
+  </ul>
   
   
-  
+</content>
 
-</div>
-  
-    
-
-    
-  <main class="post-main-wrapper px-5">
-    
-    <div class="row">
-      
-      <div class="col-md-3">
-        
-        
-        
-
-
-
-
-
-
-        
-        
-
-
-
-
-
-
-        
-
-
-
-
-
-
-  
-
-      </div>
-      
-
-      
-      
-      <div class="col-md-9 mt-3">  
-        <ul>
-          <div class='post-heading'>
-  
-      Tags
-  
-</div>
-
-        
-            
-        </ul>
-        <ul>
-          
-          
-
-            <li class="post-item">
-              
-              <a href="blog"><span>blog</span></a>
-              
-              
-            </li>
-            
-          
-
-            <li class="post-item">
-              
-              <a href="project"><span>project</span></a>
-              
-              
-            </li>
-            
-          
-
-            <li class="post-item">
-              
-              <a href="introduction"><span>introduction</span></a>
-              
-              
-            </li>
-            
-          
-        </ul>
-      </div>
-      
-      
-    </div>
   </main>
-
-    
-    
-
-<footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-
-  
-  <div class="pb-2 mt-5 pt-5">
-    
-      <a href="//github.com/dang3r " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
-    
-    
-      <a href="//linkedin.com/in/dcardoza" target="_blank" rel="noopener"><i class="fab fa-linkedin-in mr-3" aria-hidden="true"></i></a>
-    
-
-    
-
-    
-
-    
-        <a href="//twitter.com/_dcardoza" target="_blank" rel="noopener"><i class="fab fa-twitter mr-3" aria-hidden="true"></i></a>
-    
-
-    
-        <a href="//instagram.com/dancards" target="_blank" rel="noopener"><i class="fab fa-instagram mr-3" aria-hidden="true"></i></a>
-    
-
-    
-
-
-    
-        <a href="mailto:dan@danielcardoza.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
-    
-
-    
-        <a href="https://danielcardoza.com/tags/index.xml"><i class="fas fa-rss mr-3" aria-hidden="true"></i></a>
-    
-
-    
-
-  </div>
-  
-
-  
-  <div class="copyright py-4">
-    
-    <span>  2016 - 2019 &copy; | Theme <a href='https://github.com/orianna-zzo/AllinOne' target="_blank">AllinOne</a> by <a href='https://github.com/orianna-zzo' target="_blank">Orianna</a>  </span>
-  </div>
-  
-
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
 </footer>
 
-
     
+</body>
 
-
-
-
-
-
-<script type="text/javascript" src="https://danielcardoza.com/js/vendors/jquery/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="https://danielcardoza.com/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
-
-
-
-<script type="text/javascript" src="https://danielcardoza.com/js/vendors/popper.min.js"></script>
-<script type="text/javascript" src="https://danielcardoza.com/js/vendors/holder.min.js"></script>
-<script type="text/javascript" src="https://danielcardoza.com/js/vendors-extensions/bootstrap4/bootstrap.js" ></script>
-
-<script type="text/javascript" src="https://danielcardoza.com/js/vendors/mdb/mdb.min.js"></script>
-
-<script type="text/javascript" src="https://danielcardoza.com/js/main.js"></script>
-
-
-
-  
-  <script src="https://danielcardoza.com/js/vendors/highlight.pack.js"> </script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
- 
-  <script src="https://danielcardoza.com/js/vendors/katex/katex.min.js"> </script>
-  <script src="https://danielcardoza.com/js/vendors/katex/contrib/auto-render.min.js"></script>
-
-  <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          renderMathInElement(document.body);
-      });
-  </script>
-
-
-
-
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-138252403-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-
-<script type="text/javascript">
-  
-  new WOW().init();
-</script>
-
-
-
-
-  </body>
 </html>

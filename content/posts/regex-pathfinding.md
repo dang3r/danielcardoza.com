@@ -30,8 +30,6 @@ by the 1th capture group using `\1`.
 The zeroth capture group is the entire string, which is why the `1th` is used. You can use backreferences to different capture groups
 in the same regex (`\1`, `\2`, etc).
 
-The k
-
 # Directed Acylic Graph
 
 A directed acylic graph (DAG) has the following properties:
@@ -43,7 +41,7 @@ When you have a DAG, you can define a [topological ordering](https://en.wikipedi
 of its vertices. It is a list of vertices such that for every
 edge in the graph `a -> b`,  the node `a` comes before node `b` in the graph.
 
-![Topological Sort](https://i1.wp.com/algorithms.tutorialhorizon.com/files/2018/03/Topological-Sort.png?ssl=1)
+![Topological Sort](https://tutorialhorizon.com/static/media/algorithms/2018/03/Topological-Sort.png)
 
 A classic graph theory problem is finding a path between two nodes. Using what we know about backreferences and DAGs,
 we can try and solve this using regular expressions.

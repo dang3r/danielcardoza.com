@@ -1,26 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on Daniel Cardoza</title>
-    <link>https://danielcardoza.com/tags/introduction/</link>
-    <description>Recent content in Introduction on Daniel Cardoza</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Introduction on dan&#39;s internet pad</title>
+    <link>//localhost:1313/tags/introduction/</link>
+    <description>Recent content in Introduction on dan&#39;s internet pad</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Nov 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://danielcardoza.com/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 07 Mar 2020 16:15:07 -0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>https://danielcardoza.com/blog/2017-11/introduction/</link>
+      <link>//localhost:1313/introduction/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielcardoza.com/blog/2017-11/introduction/</guid>
-      <description>Introduction Welcome to my blog!
-This site was created and powered by the following:
- Hugo for static site generation Manis for the website theme Github Pages for hosting  Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
+      <guid>//localhost:1313/introduction/</guid>
+      <description>Introduction Welcome to my blog!&#xA;This site was created and powered by the following:&#xA;Hugo for static site generation Manis for the website theme Github Pages for hosting Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
     </item>
-    
   </channel>
 </rss>

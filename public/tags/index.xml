@@ -1,42 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Daniel Cardoza</title>
-    <link>https://danielcardoza.com/tags/</link>
-    <description>Recent content in Tags on Daniel Cardoza</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tags on dan&#39;s internet pad</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on dan&#39;s internet pad</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://danielcardoza.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 09 Apr 2022 01:37:10 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://danielcardoza.com/tags/blog/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielcardoza.com/tags/blog/</guid>
+      <link>//localhost:1313/tags/blog/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/blog/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>https://danielcardoza.com/tags/introduction/</link>
-      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielcardoza.com/tags/introduction/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>Project</title>
-      <link>https://danielcardoza.com/tags/project/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielcardoza.com/tags/project/</guid>
+      <link>//localhost:1313/tags/project/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/project/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Tech</title>
+      <link>//localhost:1313/tags/tech/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithm</title>
+      <link>//localhost:1313/tags/algorithm/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Games</title>
+      <link>//localhost:1313/tags/games/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/games/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graph</title>
+      <link>//localhost:1313/tags/graph/</link>
+      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/graph/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regex</title>
+      <link>//localhost:1313/tags/regex/</link>
+      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/regex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>//localhost:1313/tags/cloud/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fuse</title>
+      <link>//localhost:1313/tags/fuse/</link>
+      <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/fuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>//localhost:1313/tags/python/</link>
+      <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>//localhost:1313/tags/introduction/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/introduction/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

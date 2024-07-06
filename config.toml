@@ -1,7 +1,7 @@
 baseURL = "/"
 
 defaultContentLanguage = "en"
-theme = "LoveIt"
+theme = "hugo-bearblog"
 
 enableRobotsTXT = true
 enableGitInfo = true
@@ -13,7 +13,7 @@ enableEmoji = true
     # language code
     languageCode = "en"
     # website title
-    title = "Daniel Cardoza"
+    title = "dan's internet pad"
     # language name
     languageName = "English"
     # default amount of posts in each pages
@@ -34,11 +34,6 @@ enableEmoji = true
         name = "Tags"
         url = "/tags/"
         weight = 2
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about/"
-        weight = 3
       [languages.en.params]
         # site description
         description = "About LoveIt Theme"

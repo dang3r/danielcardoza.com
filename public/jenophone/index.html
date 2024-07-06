@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jenophone : SMS forwarder using Twilio | dan&#39;s internet pad</title>
+<meta name="title" content="Jenophone : SMS forwarder using Twilio" />
+<meta name="description" content="Jenophone - SMS forwarder" />
+<meta name="keywords" content="blog,project," />
+
+
+<meta property="og:url" content="//localhost:1313/jenophone/">
+  <meta property="og:site_name" content="dan&#39;s internet pad">
+  <meta property="og:title" content="Jenophone : SMS forwarder using Twilio">
+  <meta property="og:description" content="Jenophone - SMS forwarder">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-01-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-03-07T16:15:07-08:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Project">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jenophone : SMS forwarder using Twilio">
+  <meta name="twitter:description" content="Jenophone - SMS forwarder">
+      <meta name="twitter:site" content="@_dcardoza">
+
+
+
+
+  <meta itemprop="name" content="Jenophone : SMS forwarder using Twilio">
+  <meta itemprop="description" content="Jenophone - SMS forwarder">
+  <meta itemprop="datePublished" content="2018-01-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2020-03-07T16:15:07-08:00">
+  <meta itemprop="wordCount" content="436">
+  <meta itemprop="keywords" content="Blog,Project">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>dan&#39;s internet pad</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/posts/">Posts</a>
+
+<a href="/tags/">Tags</a>
+
+
+</nav>
+</header>
+  <main>
+
+<content>
+  <h1 id="overview">Overview</h1>
+<p>When I moved to California after graduation, it became difficult to easily
+communicate with my girlfriend in Canada because of telecom issues.</p>
+<p>The crux of the problem was the following:</p>
+<ul>
+<li>My phone plan has unlimited data and unlimited texting to US, Canada phone
+numbers.</li>
+<li>My girlfriend&rsquo;s phone plan had limited data (thank you Canadian telecoms) and
+only had unlimited texting in Canada.</li>
+</ul>
+<p>I wanted to make communication easier between us, so I decided to make my own
+SMS forwarding service using Twilio.</p>
+<h1 id="solution">Solution</h1>
+<p>My girlfriend&rsquo;s name is Jennifer, hence <em>Jenophone</em>.</p>
+<p>Twilio is a company that provides programmable sms, voice and other communication
+APIs.  One key feature is they allow users to register a phone number in a given
+country and hook into it via their APIs.</p>
+<p>My proposed solution was:</p>
+<ul>
+<li>Get a phone number in Canada. This would allow both my girlfriend and I to
+text it.</li>
+<li>When that phone number received a text from myself, it would forward it to my
+girlfriend. And vise-versa.</li>
+</ul>
+<p>Note that Twilio does give new users a certain amount of free resources, but it
+is a paid service after the trial period ends.</p>
+<h1 id="implementation">Implementation</h1>
+<p>To set up my Twilio phone number, I used the Twilio web-ui. After creating a
+number in <code>Quebec</code>, I proceeded to create a TwiML application associated with this
+number. A TwiML application allows you to configure a webserver where events are
+forwarded. These events can be incoming phone calls related to the number,
+incoming texts and others. Specifically, I wanted to tap into the webhook events
+regarding texts.</p>
+<p>I required a web server that could listen to these webhook events and provide
+the SMS forwarding capabilties I described above. I implemented this using
+<code>Golang</code> and the standard library. The code can be seen
+<a href="https://github.com/dang3r/jenophone">here</a>.</p>
+<p>Starting Jenophone is as simple as:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">go build jenophone.go
+</span></span><span class="line"><span class="cl">./jenophone -num1=&lt;user 1 phone number&gt; -num2=&lt;user 2 phone number&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>To use, my girlfriend and I only had to start texting our provisioned Quebec number.</p>
+<p>I decided to utilize my free <code>Google Compute Cloud</code> credits for deployment and
+<code>LetsEncrypt</code> for generating the TLS keys required. I may add some basic
+Terraform configuration in a future PR to ease the infrastructure work.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>This project was intended to solve a real world problem of mine, but to also
+gain experience with the Twilio service. Friends of mine had used it extensively
+for their Waterloo Fourth Year Design Project (<a href="https://uwaterloo.ca/capstone-design/">FYDP</a>) and loved its simplicity.</p>
+<p>I imagine there are free or less costly services than Twilio for performing this.
+However, it was a fun little project to work on and gain experience with Twilio.</p>
+
+</content>
+<p>
+  
+  <a href="//localhost:1313/tags/blog/">#Blog</a>
+  
+  <a href="//localhost:1313/tags/project/">#Project</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
