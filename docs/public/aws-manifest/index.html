@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>aws-manifest | </title>
+<meta name="title" content="aws-manifest" />
+<meta name="description" content="A python package for retrieving information about aws api resources
+and the actions that can be performed on them" />
+<meta name="keywords" content="blog,project," />
+
+
+<meta property="og:url" content="//localhost:1313/aws-manifest/">
+  <meta property="og:title" content="aws-manifest">
+  <meta property="og:description" content="A python package for retrieving information about aws api resources
+and the actions that can be performed on them">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-07-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-03-07T16:15:07-08:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Project">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="aws-manifest">
+  <meta name="twitter:description" content="A python package for retrieving information about aws api resources
+and the actions that can be performed on them">
+
+
+
+
+  <meta itemprop="name" content="aws-manifest">
+  <meta itemprop="description" content="A python package for retrieving information about aws api resources
+and the actions that can be performed on them">
+  <meta itemprop="datePublished" content="2019-07-31T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2020-03-07T16:15:07-08:00">
+  <meta itemprop="wordCount" content="363">
+  <meta itemprop="keywords" content="Blog,Project">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2></h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+</nav>
+</header>
+  <main>
+
+<content>
+  <p><strong>TL:DR</strong> <code>pip install aws-manifest</code> / <a href="https://github.com/dang3r/aws-manifest">https://github.com/dang3r/aws-manifest</a></p>
+<p>I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and
+actions that could be called on them. I wanted to answer questions such as &ldquo;What
+are all of the api actions that can be done for ec2?&rdquo;.</p>
+<p>There is no API for doing so from AWS, so I started looking for other options.
+Some projects scrape the AWS documentation and extract the data from the markup.
+This is how projects like <a href="https://iam.cloudonaut.io/">https://iam.cloudonaut.io/</a> work. You can see the code they use
+for scraping and parsing in their github repo <a href="https://github.com/widdix/complete-aws-iam-reference/tree/master/tools">here</a>.</p>
+<p>I haven&rsquo;t been able to find the thread on the aws forums, but I recall someone mentioning
+you could scrape or get the data from <a href="https://awspolicygen.s3.amazonaws.com/policygen.html">https://awspolicygen.s3.amazonaws.com/policygen.html</a>.
+Awspolicygen is a tool for generating aws policies for their services.</p>
+<p>This started my shallow dive into doing this.</p>
+<h3 id="extracting-a-manifest-of-aws-apis-and-services">Extracting a manifest of aws apis and services</h3>
+<p>The site looks exactly like you&rsquo;d expect.</p>
+<p><img src="/images/s3_policygen.png" alt="AWS-S3-PolicyGen"></p>
+<p>Looking at the assets it loads, I saw an interesting <code>policies.js</code> bundle.</p>
+<p><img src="/images/s3_policygen_assets.png" alt="AWS-S3-PolicyGen-Assets"></p>
+<p>Inspecting its content, it is just assigning an object to a global variable.
+<img src="/images/s3_policygen_asset_js.png" alt="AWS-S3-PoliyGen-Js-Bundle"></p>
+<p>If you remove the assignment to the variable, and put it into Jsonlint, you get
+a valid json file.</p>
+<p><img src="/images/s3_polygen_jsonlint.png" alt="Jsonlint"></p>
+<p>After analyzing the object, it had all of the necessary information to answer
+the question. I wanted to use ask these questions from Python, so I made
+<code>aws-manifest</code></p>
+<h3 id="aws-manifest">aws-manifest</h3>
+<p>The package provides an easy interface for getting access to the full manifest,
+and answering simple questions. It is able to either remotely pull down
+the latest version of the manifest, or use one bundled with the package.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="line"><span class="cl"><span class="o">&gt;&gt;</span> <span class="kn">from</span> <span class="nn">awsmanifest</span> <span class="kn">import</span> <span class="n">manifest</span><span class="p">,</span> <span class="n">AwsManifest</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Retrieve the latest set of aws resources</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;</span> <span class="n">m</span> <span class="o">=</span> <span class="n">manifest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="s2">&#34;serviceMap&#34;</span><span class="p">][</span><span class="s2">&#34;Amazon EC2&#34;</span><span class="p">][</span><span class="s2">&#34;Actions&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Retrieve the bundled local copy of aws resources</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;</span> <span class="n">m</span> <span class="o">=</span> <span class="n">manifest</span><span class="p">(</span><span class="n">local</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># For helper functions, use the `AwsManifest` class</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">AwsManifest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">service_prefixes</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">actions</span><span class="p">(</span><span class="s2">&#34;Amazon EC2&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">actions</span><span class="p">(</span><span class="s2">&#34;s3&#34;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>After publishing to pypi and github, I decided to search for references
+to the javascript file. Lo and behold, <a href="https://github.com/search?p=1&amp;q=https%3A%2F%2Fawspolicygen.s3.amazonaws.com%2Fjs%2Fpolicies.js&amp;type=Code">https://github.com/search?p=1&amp;q=https%3A%2F%2Fawspolicygen.s3.amazonaws.com%2Fjs%2Fpolicies.js&amp;type=Code</a>.</p>
+<p>Its cool to see how common this workaround is.</p>
+
+</content>
+<p>
+  
+  <a href="//localhost:1313/tags/blog/">#Blog</a>
+  
+  <a href="//localhost:1313/tags/project/">#Project</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

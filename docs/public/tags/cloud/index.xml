@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on </title>
+    <link>//localhost:1313/tags/cloud/</link>
+    <description>Recent content in Cloud on </description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 07 Mar 2020 16:15:07 -0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stratocumulus.cloud</title>
+      <link>//localhost:1313/stratocumulus/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/stratocumulus/</guid>
+      <description>TL:DR https://stratocumulus.cloud&#xA;Top level domains (TLD) Every so often, I encounter a new top level domain (TLD). TLDs are at the topmost level of domains. A few of the most common are .com, .org, .net and if you are a trendy startup, .io. You can retrieve a full list of TLDs on wikipedia.&#xA;Below are some of my favourite TLDs with various subdomains.&#xA;.ninja coding.ninja sneaky.ninja food.ninja .rocks exercise.rocks igneous.rocks ilove.</description>
+    </item>
+  </channel>
+</rss>

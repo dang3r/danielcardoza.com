@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Google Data Studio : Powerful and easy data visualization | </title>
+<meta name="title" content="Google Data Studio : Powerful and easy data visualization" />
+<meta name="description" content="An overview of google data studio and why you should use it" />
+<meta name="keywords" content="blog,project,tech," />
+
+
+<meta property="og:url" content="//localhost:1313/google-data-studio/">
+  <meta property="og:title" content="Google Data Studio : Powerful and easy data visualization">
+  <meta property="og:description" content="An overview of google data studio and why you should use it">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-04-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-04-09T01:37:10-04:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Project">
+    <meta property="article:tag" content="Tech">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Google Data Studio : Powerful and easy data visualization">
+  <meta name="twitter:description" content="An overview of google data studio and why you should use it">
+
+
+
+
+  <meta itemprop="name" content="Google Data Studio : Powerful and easy data visualization">
+  <meta itemprop="description" content="An overview of google data studio and why you should use it">
+  <meta itemprop="datePublished" content="2022-04-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2022-04-09T01:37:10-04:00">
+  <meta itemprop="wordCount" content="555">
+  <meta itemprop="keywords" content="Blog,Project,Tech">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2></h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+</nav>
+</header>
+  <main>
+
+<content>
+  <h2 id="overview">Overview</h2>
+<p>Google Data Studio is a tool engineers and analysts can use to visualize and
+present data.  It is the equivalent of using Excel or Google Sheets to generate
+graphs and plots but for data in different data stores (eg. Google BigQuery).</p>
+<p>I became acquainted with Data Studio through work. I had a large dataset and results from
+a very large processing job that I wanted to turn into a report. The data was in
+Google BigQuery, a datawarehouse on GCP. In the past, my workflow may have been
+to:</p>
+<ul>
+<li>Extract the data I care about it, put it into a Google Sheet and generate
+diagrams.</li>
+<li>Extract the data to csvs, and use a jupyter notebook to visualize the data</li>
+</ul>
+<p>Both solutions are fine. I have used them successfuly in the past. But I felt
+like there was something better and more convenient. When digging into the
+integrations for BigQuery, I saw you could use Google Sheets or Data Studio to
+visualize the data.</p>
+<p>The Google Sheets integration worked but wasn&rsquo;t easy to deal with. I tried Data
+Studio and ended up loving it.</p>
+<h2 id="data-studio--bigquery">Data Studio + BigQuery</h2>
+<p>Like many data visualization tools, you just link your data source with the
+tool. Since both BigQuery and DataStudio are google products, integrating them
+was seamless.</p>
+<p>Once you integrate the data store, you can easily create line charts for
+time-series data, pie charts for distributions and more.</p>
+<p>To showcase this, I will guide you through how I made a visualization for Hacker
+News Data available on BigQuery!</p>
+<h2 id="analyzing-hackernews-data-with-data-studio">Analyzing Hackernews data with Data Studio</h2>
+<h3 id="add-the-hackernews-bigquery-data-to-data-studio">Add the hackernews bigquery data to Data Studio</h3>
+<ol>
+<li>Navigate to google.datastudio.com</li>
+<li>Click on add a data source in the top left</li>
+<li>Select a BigQuery dataset</li>
+<li>If you don&rsquo;t have a Google Cloud Platform project for this, create one</li>
+<li>Select your project for billing purposes.</li>
+<li>Select public datasets</li>
+<li>Select the <code>hackernews.full</code> table</li>
+</ol>
+<h3 id="create-some-toy-visualizations">Create some toy visualizations</h3>
+<ol>
+<li>Create a new DataStudio Report</li>
+<li>Click add data. Add the hackernews <code>full</code> table to the report. You can now
+use it for visualizations.</li>
+<li>View the table schema to see what types of data is available (Eg. posts,
+comments, submitters, etc.)</li>
+</ol>
+<p>The user interface for creating visualizations is quite nice and intuitive. Left
+as an exercise to the reader.</p>
+<p>Some items I investigated were:</p>
+<ul>
+<li>most popular posts</li>
+<li>how often posts are made</li>
+<li>most common websites for submissions</li>
+<li>when are submissions created</li>
+<li>&hellip;</li>
+</ul>
+<h2 id="cool-things-about-data-studio">Cool things about Data Studio</h2>
+<ul>
+<li>You can create your visualization and share it with others! Share it like a
+google doc.</li>
+<li>The datastore you use may be updated periodically. Data Studio has the ability
+to periodically refresh or manually refresh the visualizations to ensure they
+are always up to date. For reports on static data, pick a high period. If you
+want up to date visualizations, you can select a period in the minutes.</li>
+<li>You can export your visualization to a PDF for sending via email.</li>
+<li>For those visualizing machine learning workflows, you can use the pivot table
+visualization to generate a confusion matrix!</li>
+<li>Data Studio is free, but you may incur costs based on your datastore. If using
+bigquery, be aware that every time your data is refreshed you pay query costs.</li>
+</ul>
+<h2 id="my-example-dashboard">My example dashboard</h2>
+<p>To view the live dashboard, click
+<a href="https://datastudio.google.com/reporting/d8ccd17f-26cf-4f48-9cf2-b23f45a88c8f">here</a>.</p>
+<p>To view the exported pdf, click <a href="/images/data-studio-hackernews.pdf">here</a>.</p>
+<p>I have also include all images embedded below.</p>
+<p><img src="/images/data-studio-hackernews.pdf-0.png" alt="Data Studio Page 1">
+<img src="/images/data-studio-hackernews.pdf-1.png" alt="Data Studio Page 2">
+<img src="/images/data-studio-hackernews.pdf-2.png" alt="Data Studio Page 3">
+<img src="/images/data-studio-hackernews.pdf-3.png" alt="Data Studio Page 4">
+<img src="/images/data-studio-hackernews.pdf-4.png" alt="Data Studio Page 5">
+<img src="/images/data-studio-hackernews.pdf-5.png" alt="Data Studio Page 6"></p>
+
+</content>
+<p>
+  
+  <a href="//localhost:1313/tags/blog/">#Blog</a>
+  
+  <a href="//localhost:1313/tags/project/">#Project</a>
+  
+  <a href="//localhost:1313/tags/tech/">#Tech</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

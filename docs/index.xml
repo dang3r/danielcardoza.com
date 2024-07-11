@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Making a custom fitbit watchface</title>
+      <link>/projects/fitbit-watchface/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>/projects/fitbit-watchface/</guid>
+      <description>making a fitbit watchface disclaimer: this is a dev log, not polished.&#xA;why I was reading Master of Doom about ID Software and the legends John Romen and John Carmack. The author describes the game-making process and how new engine technology designed by Carmack enabled new games designed by Romero. This made me think about my meager experience in graphics, and UI in general.&#xA;I mostly work on backend and infrastructure and wanted to do a toy project.</description>
+    </item>
+    <item>
       <title>Google Data Studio : Powerful and easy data visualization</title>
       <link>/google-data-studio/</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>

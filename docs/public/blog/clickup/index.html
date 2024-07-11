@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Clickupy - API &#43; FUSE for Clickup // Daniel Cardoza</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.53" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Daniel Cardoza" />
+    <meta name="description" content="A Python3 API and FUSE filesystem for Clickup" />
+    <link rel="stylesheet" href="https://danielcardoza.com/css/main.min.61bb32028587f24ca28522d8d197970c7ef33284e5fffb45a75fcbbb2dbc4dcb.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Clickupy - API &#43; FUSE for Clickup"/>
+<meta name="twitter:description" content="A Python3 API and FUSE filesystem for Clickup"/>
+
+    <meta property="og:title" content="Clickupy - API &#43; FUSE for Clickup" />
+<meta property="og:description" content="A Python3 API and FUSE filesystem for Clickup" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://danielcardoza.com/blog/clickup/" /><meta property="article:published_time" content="2019-05-26T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-26T00:00:00&#43;00:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://danielcardoza.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Daniel Cardoza" /></a>
+      <h1>Daniel Cardoza</h1>
+      <p>Software engineer, fitness enthusiast, Canadian.</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/dang3r" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/_dancards" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+          <a target="_blank" href="//github.com/dang3r" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="//linkedin.com/in/dcardoza" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Clickupy - API &#43; FUSE for Clickup</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 26, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          7 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://danielcardoza.com/tags/blog/">Blog</a><a class="tag" href="https://danielcardoza.com/tags/project/">Project</a><a class="tag" href="https://danielcardoza.com/tags/fuse/">Fuse</a><a class="tag" href="https://danielcardoza.com/tags/python/">Python</a></div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p><strong>TL:DR</strong> <code>pip install clickupy</code> / <a href="https://github.com/dang3r/clickupy">https://github.com/dang3r/clickupy</a></p>
+
+<p>Over the past few years, I have used many different project management tools.
+JIRA has been a consistent one, and the tool with the most name recognition.
+Trello is a very lightweight alternative, and the the one I personally use.
+Redbooth is another big player and I&rsquo;ve used it heavily (especially while working
+there!). Wrike and Asana are a few others I&rsquo;ve encountered every now and then.</p>
+
+<p>It was surprising to learn about Clickup, which I have started to use at work.
+Largely similar to the other solutions provided, I find it strikes a nice balance
+between being lightweight and powerful. It has a sleek UI, a well-documented
+API and is easy to use. The only complaint I&rsquo;ve heard is that the ids
+for tasks are actually UUIDs and not integers but I don&rsquo;t consider that an issue.</p>
+
+<p>When using these tools for software engineering, it becomes useful to attach task ids
+to pull requests. Most tools have integrations with the big players (Github, Gitlab)
+that can detect when code for a task is merged, and will close the task for you.
+To do this, you can attach the task id to the branch name, the pull request title
+or the body of the commit.</p>
+
+<pre><code class="language-bash">$ git checkout -b dang3r/CL-asdji/clickup-blogpost
+$ # do work ....
+$ git commit -m &quot;CL-ASDJI Make a new Clickup blogpost&quot;
+$ git push
+</code></pre>
+
+<p>One small complaint I&rsquo;ve had is for every new branch I create, I have to:</p>
+
+<ul>
+<li>leave my terminal</li>
+<li>log onto the project management tool website</li>
+<li>search for my task</li>
+<li>find and copy the id</li>
+<li>come back to my terminal</li>
+</ul>
+
+<p>It would be nice if there was a tool that automatically did this for you,
+or allowed you to retrieve task ids via a CLI.</p>
+
+<p>Whenever thinking about optimizing a workflow, you should always consult the
+lovely xkcd <a href="https://xkcd.com/1205/">Task Automation</a>. In this case, I do the task
+often enough, so I thought why not?</p>
+
+<p>My initial thoughts for a project were:</p>
+
+<ul>
+<li>Make a simple API client</li>
+<li>Create a CLI wrapping the client</li>
+<li>Build a thin tool that helps developers create branches from task ids</li>
+</ul>
+
+<p>The project was going to be written in python, and was aptly named&hellip;</p>
+
+<h2 id="clickupy">Clickupy</h2>
+
+<p>Clickup has a well documented <a href="https://clickup.com/api">API</a>. It is currently in
+beta, but provides access to most resources. They provide an
+<a href="https://jsapi.apiary.io/apis/clickup.source">API blueprint</a> which was nice.
+It is much less comprehensive than an OpenAPI v3.0 spec, but its nice they provide it.</p>
+
+<p>Making the HTTP-API client was straightforward. You can retrieve your API token by
+navigating to your Apps on Clickup (settings -&gt; apps).</p>
+
+<p>Once that was done, a CLI was required. For python projects, I love to use
+<a href="https://click.palletsprojects.com/en/7.x/">Click</a>. The CLI wrapped the API,
+and allows you to retrieve information about a user&rsquo;s project, spaces, teams, etc.
+When deciding what to print for the CLI, I thought about simply printing the JSON
+response bodies of the API. However, they are not the most user friendly and for
+the initial task at hand, you only need a subset of the information.</p>
+
+<p>To handle this, I allow users of the CLI to pass in a format parameter that allows you print
+json or human-friendly messages.</p>
+
+<pre><code class="language-shell">$ clickup --help
+Usage: clickup [OPTIONS] COMMAND [ARGS]...
+
+  A command line tool for interacting with clickup
+
+Options:
+  --format [human|json]
+  --api_key TEXT         An API KEY for clickup  [required]
+  --help                 Show this message and exit.
+
+Commands:
+  fuse      Create a FUSE filesystem for clickup resources
+  projects  Get a space's projects
+  spaces    Get a team's spaces
+  tasks     Get a team's spaces
+  team      Get a user's team
+  teams     Get a user's teams
+  user      Get a user
+</code></pre>
+
+<p>At this stage, you could easily use it to solve my initial problem : getting the task id
+so you can create your branches</p>
+
+<pre><code class="language-shell">$ clickup --format human teams
+13333337 acme.corp 17 users
+dcardoza@neutrino.local:clickupy $ clickup --format human tasks 13333337
+abcdef Design battle plans for fighting the night king
+zyzyza Perform cool ritual to get help from the lord of light 
+humanb Sacrifice the bulk of your cavalary in a pointless charge (but it will look cool)
+...
+$ git checkout -b CL-abcdef/design-battle-plans
+</code></pre>
+
+<p>And bam, we are now done. Right?</p>
+
+<p>No. It was at this time my roomate <a href="https://www.linkedin.com/in/adrian-ziegler-millard-3822ba163/">Adrian</a>
+started discussing FUSE filesystems with me. They sounded like a cool idea. I thought
+it would be cool if you could take an API and provide a filesystem interface to it.
+The clearest parallel is that the PATH for a rest resource translates
+nicely to file directory paths. I decided to look at this further.</p>
+
+<h3 id="fuse">FUSE</h3>
+
+<p>FUSE allows you to make a filesystem in userspace. This makes much more developer friendly
+than trying to learning what goes into a kernel filesystem.</p>
+
+<p>For the purpose of <code>clickupy</code> I wanted to create a simple directory, that displayed information about
+a user&rsquo;s metadata, and their teams. This was a much more scaled down version of my initial
+plans.</p>
+
+<p>To begin implementing, I found <a href="https://github.com/skorokithakis/python-fuse-sample">python-fuse-sample</a>
+that provides a easy interface to build your API around. Simply put, you are given a class
+that has to implement a set of methods that are called when files are accessed on your FUSE
+filesystem. Some of these are:</p>
+
+<ul>
+<li><code>access</code> : Does the user have access to the file?</li>
+<li><code>read</code> : Return bytes containing the content for a file.</li>
+<li><code>readdir</code> : Return a list of files in a directory</li>
+</ul>
+
+<p>When building this part of the project, a few things became apparent:</p>
+
+<h4 id="http-paths-fs">HTTP Paths &lt;-&gt; FS</h4>
+
+<p>HTTP paths are the same as paths on a filesystem. The method signatures for FUSE
+typically give you the path of the file in question. Handling requests for a file
+were similar to how requests are handled for the HTTP API.</p>
+
+<p>Most web frameworks provide a way to map a route with a handler. I decided to use
+the same for this project.</p>
+
+<pre><code class="language-python">
+# HTTP Router for Tornado
+def make_app():
+    return tornado.web.Application([
+        (r&quot;/&quot;, MainHandler),
+        (r&quot;/foo&quot;, FooHandler)
+    ])
+
+# File Router for Clickupy
+class Router:
+    &quot;&quot;&quot;
+    A router that matches filesystem operations at a given path
+    to a handler
+    &quot;&quot;&quot;
+    def __init__(self, client):
+        self.client = client
+        self.handlers = [
+            (r&quot;^/$&quot;, BaseHandler(client)),
+            (r&quot;^/user$&quot;, UserHandler(client)),
+            (r&quot;^/teams\/?$&quot;, TeamsHandler(client)),
+            (r&quot;^/teams/[0-9]+$&quot;, TeamHandler(client))
+
+        ]
+</code></pre>
+
+<h4 id="usefulness-of-different-interfaces">Usefulness of different interfaces</h4>
+
+<p>This project eventually provided an python API, a CLI and a fuse filesystem
+to access the same data. Each could be consumed by a different type of user, with
+varying levels of control.</p>
+
+<h3 id="finished-product">Finished Product</h3>
+
+<p>Now, users can do the following and look at a subset of their Clickup resources
+on the filesystem</p>
+
+<pre><code>dcardoza@neutrino.local:clickupy $ clickup fuse cl-fs &gt; /dev/null 2&gt;&amp;1 &amp;
+[1] 27590
+dcardoza@neutrino.local:clickupy $ tree cl-fs/
+cl-fs/
+├── teams
+│   └── 13337
+│   └── 13123
+│   └── 1113
+│   └── 99991
+└── user
+
+1 directory, 2 files
+dcardoza@neutrino.local:clickupy $ cat cl-fs/user 
+{
+  &quot;user&quot;: {
+    &quot;id&quot;: 1,
+    &quot;username&quot;: &quot;Daniel Cardoza&quot;,
+    &quot;color&quot;: &quot;#ff8asd&quot;,
+    &quot;profilePicture&quot;: &quot;https://cool-glasses.jpg&quot;,
+    &quot;initials&quot;: &quot;DC&quot;,
+    &quot;week_start_day&quot;: null,
+    &quot;global_font_support&quot;: false
+  }
+}dcardoza@neutrino.local:clickupy $ cat cl-fs/teams/13337
+{
+  &quot;team&quot;: {
+    &quot;id&quot;: &quot;13337&quot;,
+    &quot;name&quot;: &quot;Foo co&quot;,
+    &quot;color&quot;: &quot;#ffffff&quot;,
+    &quot;avatar&quot;: &quot;www.image.ca&quot;,
+    &quot;members&quot;: [
+        ...
+    ]
+</code></pre>
+
+<h2 id="closing-thoughts">Closing thoughts</h2>
+
+<p>This was a fun project to make, and allowed me to learn more about Clickup and FUSE.
+Although I will probably stop working on this project, there are a few extensions of it
+worth thinking about</p>
+
+<h4 id="providing-filesystem-interfaces-for-http-apis">Providing filesystem interfaces for HTTP APIS</h4>
+
+<p>Tools like API blueprint, swagger, OpenAPI, protobufs provide declarative ways of
+interacting with APIS. It would be cool if a project existed that could take any of
+them and create a FUSE filesystem for it.</p>
+
+<h4 id="make-clickup-s-fuse-filesystem-map-to-http-paths">Make clickup&rsquo;s FUSE filesystem map to HTTP paths</h4>
+
+<p>This is similar to the previous point, and can simplify the implementation.</p>
+
+<h4 id="tool-that-integrates-clickupy-with-git">Tool that integrates <code>clickupy</code> with git</h4>
+
+<p>Currently this is a manual process. A user can retrieve the task id of a task
+by using <code>clickup tasks</code> and <code>grep</code> off the title, to make a nmew git branch.
+A simple wrapper could automate this. This idea could be extended to other
+project management providers too.</p>
+
+<h4 id="blog">Blog</h4>
+
+<p>This is my first blogpost in quite a while. I hope to continue writing posts
+about various projects, and become a writer as a result.</p>
+
+<p>Thanks for reading! If you&rsquo;d like to contact me, my contact info is on this website :)</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
