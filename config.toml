@@ -18,10 +18,7 @@ enableEmoji = true
     languageName = "English"
     # default amount of posts in each pages
     paginate = 10
-    # [UA-XXXXXXXX-X] google analytics code
-    googleAnalytics = "UA-138252403-1"
     # date format
-    dateFormatToUse = "2006-01-02"
     # Menu Info
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -42,6 +39,7 @@ enableEmoji = true
       [languages.en.params]
         # site description
         description = "About LoveIt Theme"
+        dateFormatToUse = "2006-01-02"
         # site keywords
         keywords = ["Theme", "Hugo"]
         # site default theme ("light", "dark", "auto")
@@ -127,11 +125,6 @@ enableEmoji = true
 [Permalinks]
   # posts = ":year/:month/:filename"
   posts = ":filename"
-
-# Privacy Info (https://gohugo.io/about/hugo-and-gdpr/)
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
 
 # Options to make output .md files
 [mediaTypes]

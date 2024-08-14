@@ -78,3 +78,10 @@ Thus began my journey to make a custom clockface for my fitbit.
 
 ![fitbit-iteration-5](/images/fitbit/4.jpg)
 
+### iteration 6
+
+- Add colors to the different progress bars.
+
+![fitbit-iteration-5](/images/fitbit/5.jpg)
+
+
