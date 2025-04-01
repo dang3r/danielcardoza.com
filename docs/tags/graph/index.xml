@@ -13,7 +13,7 @@
       <link>/regex-pathfinding/</link>
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/regex-pathfinding/</guid>
-      <description>Overview Regular expressions (regex) are a fun topic in computer science. I love revisiting the fundamentals every so often, so I read https://qntm.org/re_en recently. It is a great practical primer on regex. I&amp;rsquo;d recommend it to beginners and advanced engineers alike.&#xA;Backreferences One of the most powerful regex techniques are backreferences. They allow you to match text that was previously matched by a capture group. You refer to previous groups using their index.</description>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;Regular expressions (regex) are a fun topic in computer science. I love revisiting the fundamentals&#xA;every so often, so I read &lt;a href=&#34;https://qntm.org/re_en&#34;&gt;https://qntm.org/re_en&lt;/a&gt; recently. It is a great practical&#xA;primer on regex. I&amp;rsquo;d recommend it to beginners and advanced engineers alike.&lt;/p&gt;&#xA;&lt;h1 id=&#34;backreferences&#34;&gt;Backreferences&lt;/h1&gt;&#xA;&lt;p&gt;One of the most powerful regex techniques are &lt;a href=&#34;https://www.regular-expressions.info/backref.html&#34;&gt;backreferences&lt;/a&gt;.&#xA;They allow you to match text that was previously matched by a capture group. You refer&#xA;to previous groups using their index.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

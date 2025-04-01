@@ -13,7 +13,7 @@
       <link>/google-data-studio/</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
       <guid>/google-data-studio/</guid>
-      <description>Overview Google Data Studio is a tool engineers and analysts can use to visualize and present data. It is the equivalent of using Excel or Google Sheets to generate graphs and plots but for data in different data stores (eg. Google BigQuery).&#xA;I became acquainted with Data Studio through work. I had a large dataset and results from a very large processing job that I wanted to turn into a report.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Google Data Studio is a tool engineers and analysts can use to visualize and&#xA;present data.  It is the equivalent of using Excel or Google Sheets to generate&#xA;graphs and plots but for data in different data stores (eg. Google BigQuery).&lt;/p&gt;&#xA;&lt;p&gt;I became acquainted with Data Studio through work. I had a large dataset and results from&#xA;a very large processing job that I wanted to turn into a report. The data was in&#xA;Google BigQuery, a datawarehouse on GCP. In the past, my workflow may have been&#xA;to:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
       <link>/joto-installation/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/joto-installation/</guid>
-      <description>One of the games my parents used to play in the 1990s was Jewels of the Oracle. It is a puzzle game set in ancient Mesopotamia consisting of 24 puzzles. They range from logical, geometric and lingustic puzzles.&#xA;My mother was really interested in playing it again. The game came out in 1995, so playing it on modern hardware is difficult. We searched for various methods that were dead ends.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/jotw-game.jpeg&#34; alt=&#34;Jewels of the Oracle 1995&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the games my parents used to play in the 1990s was Jewels of the Oracle.&#xA;It is a puzzle game set in ancient Mesopotamia consisting of 24 puzzles. They range from logical, geometric&#xA;and lingustic puzzles.&lt;/p&gt;&#xA;&lt;p&gt;My mother was really interested in playing it again. The game came out in 1995, so playing it&#xA;on modern hardware is difficult. We searched for various methods that were dead ends. It would not run properly&#xA;on the software DOSBox used for running old games. Trying to play it on a Windows 7 machine via compatibility&#xA;mode also failed. The last idea I had was to try and run it within a Virtual Machine. I eventually got it&#xA;to work, and have left the installation details below.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

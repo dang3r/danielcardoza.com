@@ -13,7 +13,7 @@
       <link>//localhost:1313/introduction/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/introduction/</guid>
-      <description>Introduction Welcome to my blog!&#xA;This site was created and powered by the following:&#xA;Hugo for static site generation Manis for the website theme Github Pages for hosting Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to my blog!&lt;/p&gt;&#xA;&lt;p&gt;This site was created and powered by the following:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; for static site generation&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://themes.gohugo.io/manis-hugo-theme/&#34;&gt;Manis&lt;/a&gt; for the website theme&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt; for hosting&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Through this blog, I hope to write interesting posts about projects I am working on,&#xA;self development and life in general.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

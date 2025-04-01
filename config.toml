@@ -17,7 +17,7 @@ enableEmoji = true
     # language name
     languageName = "English"
     # default amount of posts in each pages
-    paginate = 10
+    pagination.pagerSize = 10
     # date format
     # Menu Info
     [languages.en.menu]
@@ -143,4 +143,3 @@ enableEmoji = true
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]

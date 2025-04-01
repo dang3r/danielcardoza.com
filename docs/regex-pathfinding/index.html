@@ -260,12 +260,12 @@ in the same regex (<code>\1</code>, <code>\2</code>, etc).</p>
 <p>When you have a DAG, you can define a <a href="https://en.wikipedia.org/wiki/Topological_sorting">topological ordering</a>
 of its vertices. It is a list of vertices such that for every
 edge in the graph <code>a -&gt; b</code>,  the node <code>a</code> comes before node <code>b</code> in the graph.</p>
-<p><img alt="Topological Sort" src="https://tutorialhorizon.com/static/media/algorithms/2018/03/Topological-Sort.png"></p>
+<p><img src="https://tutorialhorizon.com/static/media/algorithms/2018/03/Topological-Sort.png" alt="Topological Sort"></p>
 <p>A classic graph theory problem is finding a path between two nodes. Using what we know about backreferences and DAGs,
 we can try and solve this using regular expressions.</p>
 <h1 id="problem">Problem</h1>
 <h3 id="given-a-dag-find-a-path-between-two-nodes-using-a-regular-expressions">Given a DAG, find a path between two nodes using a regular expression(s).</h3>
-<p><img alt="Example Graph" src="/images/regex-path-example.png"></p>
+<p><img src="/images/regex-path-example.png" alt="Example Graph"></p>
 <h3 id="encoding">Encoding</h3>
 <p>Graphs are typically represented using a 2D matrix or adjacency lists. Regular expressions
 operate on strings. To encode a graph to a string, first get a topological ordering

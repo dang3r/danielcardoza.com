@@ -258,14 +258,14 @@ documentation at
 <a href="https://www.mediawiki.org/wiki/API:Main_page#The_endpoint">MediaWiki</a>.</p>
 <h3 id="problem-2--how-do-i-retrieve-the-first-link-on-a-given-wikipedia-article">Problem 2 : How do I retrieve the first link on a given Wikipedia article?</h3>
 <p>First, I had to find the corresponding HTML for a page.</p>
-<p><img alt="Doggo" src="/images/wiki-dog.png"></p>
+<p><img src="/images/wiki-dog.png" alt="Doggo"></p>
 <p>The above image represents the HTML for the main body of the Wikipedia article.</p>
-<p><img alt="CloserLook" src="/images/wiki-html.png"></p>
+<p><img src="/images/wiki-html.png" alt="CloserLook"></p>
 <p>At a closer look, at <code>p</code> elements underneath the <code>div.mw-parser-output</code> element
 contain the content of the article. Specifically, all anchors either directly
 under those <code>p</code> elements, or underneath a <code>p</code> then an <code>i</code> contained article
 links. This can be converted to an <code>xpath</code> expression for use by Nokogiri.</p>
-<p><img alt="Italics" src="/images/wiki-italics.png"></p>
+<p><img src="/images/wiki-italics.png" alt="Italics"></p>
 <h1 id="wikio-wikireducer">Wikio, Wikireducer</h1>
 <p>Wikireducer is a script that performs the search solving the problem. Wikio is
 the helper library powering it. The code can be found

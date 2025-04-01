@@ -6,77 +6,84 @@
     <description>Recent content in Blog on dan&#39;s internet pad</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Jul 2024 00:32:25 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adventures with Math Academy</title>
+      <link>/math_academy/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/math_academy/</guid>
+      <description>&lt;h1 id=&#34;adventures-with-math-academy&#34;&gt;Adventures with Math Academy&lt;/h1&gt;&#xA;&lt;p&gt;Last year, I learned about &lt;a href=&#34;https://mathacademy.com/&#34;&gt;MathAcademy.com&lt;/a&gt;. It is a website that helps you learn math in a cooler way. Imagine you had a graph of all mathematical knowledge where the nodes are concepts and the edges represents prerequisites/dependencies. With that graph, if you learn a new concept you can determine what new ones to learn. Imagine creating a queue of new concepts to to learn by identifying adjacent child nodes to nodes whose concept you already know. Also, imagine the cool spaced repetition and other learning techniques you can apply by adding labels to a given node indicating when you last reviewed the concept and were proficient in it! Follow &lt;a href=&#34;https://github.com/dang3r/forge/blob/master/mathacademy/factoring.py&#34;&gt;Justin Skycak&lt;/a&gt; for more information. I love his blog.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Google Data Studio : Powerful and easy data visualization</title>
       <link>/google-data-studio/</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
       <guid>/google-data-studio/</guid>
-      <description>Overview Google Data Studio is a tool engineers and analysts can use to visualize and present data. It is the equivalent of using Excel or Google Sheets to generate graphs and plots but for data in different data stores (eg. Google BigQuery).&#xA;I became acquainted with Data Studio through work. I had a large dataset and results from a very large processing job that I wanted to turn into a report.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Google Data Studio is a tool engineers and analysts can use to visualize and&#xA;present data.  It is the equivalent of using Excel or Google Sheets to generate&#xA;graphs and plots but for data in different data stores (eg. Google BigQuery).&lt;/p&gt;&#xA;&lt;p&gt;I became acquainted with Data Studio through work. I had a large dataset and results from&#xA;a very large processing job that I wanted to turn into a report. The data was in&#xA;Google BigQuery, a datawarehouse on GCP. In the past, my workflow may have been&#xA;to:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jewels of the Oracle : Installation</title>
       <link>/joto-installation/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/joto-installation/</guid>
-      <description>One of the games my parents used to play in the 1990s was Jewels of the Oracle. It is a puzzle game set in ancient Mesopotamia consisting of 24 puzzles. They range from logical, geometric and lingustic puzzles.&#xA;My mother was really interested in playing it again. The game came out in 1995, so playing it on modern hardware is difficult. We searched for various methods that were dead ends.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/jotw-game.jpeg&#34; alt=&#34;Jewels of the Oracle 1995&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the games my parents used to play in the 1990s was Jewels of the Oracle.&#xA;It is a puzzle game set in ancient Mesopotamia consisting of 24 puzzles. They range from logical, geometric&#xA;and lingustic puzzles.&lt;/p&gt;&#xA;&lt;p&gt;My mother was really interested in playing it again. The game came out in 1995, so playing it&#xA;on modern hardware is difficult. We searched for various methods that were dead ends. It would not run properly&#xA;on the software DOSBox used for running old games. Trying to play it on a Windows 7 machine via compatibility&#xA;mode also failed. The last idea I had was to try and run it within a Virtual Machine. I eventually got it&#xA;to work, and have left the installation details below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using regex to find a path between two nodes in a graph</title>
       <link>/regex-pathfinding/</link>
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/regex-pathfinding/</guid>
-      <description>Overview Regular expressions (regex) are a fun topic in computer science. I love revisiting the fundamentals every so often, so I read https://qntm.org/re_en recently. It is a great practical primer on regex. I&amp;rsquo;d recommend it to beginners and advanced engineers alike.&#xA;Backreferences One of the most powerful regex techniques are backreferences. They allow you to match text that was previously matched by a capture group. You refer to previous groups using their index.</description>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;Regular expressions (regex) are a fun topic in computer science. I love revisiting the fundamentals&#xA;every so often, so I read &lt;a href=&#34;https://qntm.org/re_en&#34;&gt;https://qntm.org/re_en&lt;/a&gt; recently. It is a great practical&#xA;primer on regex. I&amp;rsquo;d recommend it to beginners and advanced engineers alike.&lt;/p&gt;&#xA;&lt;h1 id=&#34;backreferences&#34;&gt;Backreferences&lt;/h1&gt;&#xA;&lt;p&gt;One of the most powerful regex techniques are &lt;a href=&#34;https://www.regular-expressions.info/backref.html&#34;&gt;backreferences&lt;/a&gt;.&#xA;They allow you to match text that was previously matched by a capture group. You refer&#xA;to previous groups using their index.&lt;/p&gt;</description>
     </item>
     <item>
       <title>aws-manifest</title>
       <link>/aws-manifest/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
       <guid>/aws-manifest/</guid>
-      <description>TL:DR pip install aws-manifest / https://github.com/dang3r/aws-manifest&#xA;I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and actions that could be called on them. I wanted to answer questions such as &amp;ldquo;What are all of the api actions that can be done for ec2?&amp;rdquo;.&#xA;There is no API for doing so from AWS, so I started looking for other options. Some projects scrape the AWS documentation and extract the data from the markup.</description>
+      <description>&lt;p&gt;&lt;strong&gt;TL:DR&lt;/strong&gt; &lt;code&gt;pip install aws-manifest&lt;/code&gt; / &lt;a href=&#34;https://github.com/dang3r/aws-manifest&#34;&gt;https://github.com/dang3r/aws-manifest&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I recently needed to retrieve a list of all Amazon Web Services (AWS) services, and&#xA;actions that could be called on them. I wanted to answer questions such as &amp;ldquo;What&#xA;are all of the api actions that can be done for ec2?&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;There is no API for doing so from AWS, so I started looking for other options.&#xA;Some projects scrape the AWS documentation and extract the data from the markup.&#xA;This is how projects like &lt;a href=&#34;https://iam.cloudonaut.io/&#34;&gt;https://iam.cloudonaut.io/&lt;/a&gt; work. You can see the code they use&#xA;for scraping and parsing in their github repo &lt;a href=&#34;https://github.com/widdix/complete-aws-iam-reference/tree/master/tools&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stratocumulus.cloud</title>
       <link>/stratocumulus/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       <guid>/stratocumulus/</guid>
-      <description>TL:DR https://stratocumulus.cloud&#xA;Top level domains (TLD) Every so often, I encounter a new top level domain (TLD). TLDs are at the topmost level of domains. A few of the most common are .com, .org, .net and if you are a trendy startup, .io. You can retrieve a full list of TLDs on wikipedia.&#xA;Below are some of my favourite TLDs with various subdomains.&#xA;.ninja coding.ninja sneaky.ninja food.ninja .rocks exercise.rocks igneous.rocks ilove.</description>
+      <description>&lt;p&gt;&lt;strong&gt;TL:DR&lt;/strong&gt; &lt;a href=&#34;https://stratocumulus.cloud&#34;&gt;https://stratocumulus.cloud&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;top-level-domains-tld&#34;&gt;Top level domains (TLD)&lt;/h1&gt;&#xA;&lt;p&gt;Every so often, I encounter a new top level domain (TLD). TLDs are at the&#xA;topmost level of domains. A few of the most common are &lt;code&gt;.com&lt;/code&gt;, &lt;code&gt;.org&lt;/code&gt;, &lt;code&gt;.net&lt;/code&gt; and if&#xA;you are a trendy startup, &lt;code&gt;.io&lt;/code&gt;. You can retrieve a full list of TLDs on&#xA;&lt;a href=&#34;https://en.wikipedia.org/wiki/Top-level_domain&#34;&gt;wikipedia&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Below are some of my favourite TLDs with various subdomains.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;.ninja&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;coding.ninja&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sneaky.ninja&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;food.ninja&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;.rocks&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;exercise.rocks&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;igneous.rocks&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;ilove.rocks&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;.life&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;thegood.life&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;theeasy.life&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;simple.life&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;.news&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;fake.news&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;real.news&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;thegood.news&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;When a new TLD comes out, most of the interesting domains are snatched up quite quickly.&#xA;Sometimes, you can actually bid and pay extra to receive early access. Google did this&#xA;with &lt;code&gt;.dev&lt;/code&gt; domain earlier this &lt;a href=&#34;https://insights.dice.com/2019/02/19/google-launches-dev-domain-early-access/&#34;&gt;year&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clickupy - API &#43; FUSE for Clickup</title>
       <link>/clickup/</link>
       <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
       <guid>/clickup/</guid>
-      <description>TL:DR pip install clickupy / https://github.com/dang3r/clickupy&#xA;Over the past few years, I have used many different project management tools. JIRA has been a consistent one, and the tool with the most name recognition. Trello is a very lightweight alternative, and the the one I personally use. Redbooth is another big player and I&amp;rsquo;ve used it heavily (especially while working there!). Wrike and Asana are a few others I&amp;rsquo;ve encountered every now and then.</description>
+      <description>&lt;p&gt;&lt;strong&gt;TL:DR&lt;/strong&gt; &lt;code&gt;pip install clickupy&lt;/code&gt; / &lt;a href=&#34;https://github.com/dang3r/clickupy&#34;&gt;https://github.com/dang3r/clickupy&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Over the past few years, I have used many different project management tools.&#xA;JIRA has been a consistent one, and the tool with the most name recognition.&#xA;Trello is a very lightweight alternative, and the the one I personally use.&#xA;Redbooth is another big player and I&amp;rsquo;ve used it heavily (especially while working&#xA;there!). Wrike and Asana are a few others I&amp;rsquo;ve encountered every now and then.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wikireducer : Following Wikipedia links</title>
       <link>/wikio/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       <guid>/wikio/</guid>
-      <description>Overview I came back from the gym last week and a few of my friend&amp;rsquo;s made the following claim:&#xA;Following the first link of a Wikipedia article always leads to philosophy&#xA;It was a very strong claim, but one that can be verified easily.&#xA;Solution My previous scraping projects and linksearchers have been exclusively in Python. I love Python, but I have been exposed to Ruby over the past months and decided this project would be a good fit.</description>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;I came back from the gym last week and a few of my friend&amp;rsquo;s made the following&#xA;claim:&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Following the first link of a Wikipedia article always leads to philosophy&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;It was a very strong claim, but one that can be verified easily.&lt;/p&gt;&#xA;&lt;h1 id=&#34;solution&#34;&gt;Solution&lt;/h1&gt;&#xA;&lt;p&gt;My previous scraping projects and linksearchers have been exclusively in Python.&#xA;I love Python, but I have been exposed to Ruby over the past months and decided&#xA;this project would be a good fit. 5 months ago I made&#xA;&lt;a href=&#34;https://github.com/dang3r/seguridad&#34;&gt;Seguridad&lt;/a&gt; to learn how to make a Ruby gem&#xA;and increase my exposure to the language. I was hoping to do the same this time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jenophone : SMS forwarder using Twilio</title>
       <link>/jenophone/</link>
       <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
       <guid>/jenophone/</guid>
-      <description>Overview When I moved to California after graduation, it became difficult to easily communicate with my girlfriend in Canada because of telecom issues.&#xA;The crux of the problem was the following:&#xA;My phone plan has unlimited data and unlimited texting to US, Canada phone numbers. My girlfriend&amp;rsquo;s phone plan had limited data (thank you Canadian telecoms) and only had unlimited texting in Canada. I wanted to make communication easier between us, so I decided to make my own SMS forwarding service using Twilio.</description>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;When I moved to California after graduation, it became difficult to easily&#xA;communicate with my girlfriend in Canada because of telecom issues.&lt;/p&gt;&#xA;&lt;p&gt;The crux of the problem was the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;My phone plan has unlimited data and unlimited texting to US, Canada phone&#xA;numbers.&lt;/li&gt;&#xA;&lt;li&gt;My girlfriend&amp;rsquo;s phone plan had limited data (thank you Canadian telecoms) and&#xA;only had unlimited texting in Canada.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I wanted to make communication easier between us, so I decided to make my own&#xA;SMS forwarding service using Twilio.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cerca : Search a website&#39;s links</title>
       <link>/cerca/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       <guid>/cerca/</guid>
-      <description>Overview I recently had a problem where I wanted to verify that a website:&#xA;did not link to a given website on a blacklist did not return non 2XX status codes for a given route Although there are many utilities you can probably piece together to solve this problem, I decided to make my own utility Cerca (which is Catalan for search).&#xA;Problem Given a website URL, search the website for all external and internal links.</description>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;I recently had a problem where I wanted to verify that a website:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;did not link to a given website on a blacklist&lt;/li&gt;&#xA;&lt;li&gt;did not return non 2XX status codes for a given route&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Although there are many utilities you can probably piece together to solve this&#xA;problem, I decided to make my own utility &lt;code&gt;Cerca&lt;/code&gt; (which is Catalan for search).&lt;/p&gt;&#xA;&lt;h1 id=&#34;problem&#34;&gt;Problem&lt;/h1&gt;&#xA;&lt;p&gt;Given a website URL, search the website for all external and internal&#xA;links. Follow all internal links while not revisiting past links.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction</title>
       <link>/introduction/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       <guid>/introduction/</guid>
-      <description>Introduction Welcome to my blog!&#xA;This site was created and powered by the following:&#xA;Hugo for static site generation Manis for the website theme Github Pages for hosting Through this blog, I hope to write interesting posts about projects I am working on, self development and life in general.</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to my blog!&lt;/p&gt;&#xA;&lt;p&gt;This site was created and powered by the following:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; for static site generation&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://themes.gohugo.io/manis-hugo-theme/&#34;&gt;Manis&lt;/a&gt; for the website theme&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt; for hosting&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Through this blog, I hope to write interesting posts about projects I am working on,&#xA;self development and life in general.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
