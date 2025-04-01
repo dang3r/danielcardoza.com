@@ -15,16 +15,12 @@ Some errata:
 - Avid lifter, hiker and public bikeshare rider
 - The only blog post of mine I like is [this one on regex +tsort](http://danielcardoza.com/regex-pathfinding/)
 - Currently working on:
-  - A custom clockface for my fitbit
-  - Using style-transfer to generate wall-art for our apartment
   - DICOM, HL7, medical-imaging, productizing AI and regulatory plumbing
   - Meeting passionate and cool people in TO (dm me on [twitter](https://x.com/_dcardoza))
-  - Using the pomodoro technique to get more done
 - Currently reading:
-  - Masters of Doom (epic tale of ID software and the two Johns)
-  - John Prophet (retro comic series)
-  - Tokyo Ghost (epic cyberpunk comic series)
-
+  - Fall of Hyperion
+  - The PayPal Wars
+  - W0RLDTR33
 
 ![](/images/me3.jpg)
 ![](/images/young_me_3.png)
