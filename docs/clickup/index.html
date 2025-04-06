@@ -40,7 +40,7 @@
   <meta itemprop="description" content="A Python3 API and FUSE filesystem for Clickup">
   <meta itemprop="datePublished" content="2019-05-26T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-03-07T16:15:07-08:00">
-  <meta itemprop="wordCount" content="1446">
+  <meta itemprop="wordCount" content="1360">
   <meta itemprop="keywords" content="Blog,Project,Fuse,Python">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -254,21 +254,11 @@ to pull requests. Most tools have integrations with the big players (Github, Git
 that can detect when code for a task is merged, and will close the task for you.
 To do this, you can attach the task id to the branch name, the pull request title
 or the body of the commit.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git checkout -b dang3r/CL-asdji/clickup-blogpost
-</span></span><span class="line"><span class="cl">$ <span class="c1"># do work ....</span>
-</span></span><span class="line"><span class="cl">$ git commit -m <span class="s2">&#34;CL-ASDJI Make a new Clickup blogpost&#34;</span>
-</span></span><span class="line"><span class="cl">$ git push
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>One small complaint I&rsquo;ve had is for every new branch I create, I have to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git checkout -b dang3r/CL-asdji/clickup-blogpost
+</span></span><span style="display:flex;"><span>$ <span style="color:#75715e"># do work ....</span>
+</span></span><span style="display:flex;"><span>$ git commit -m <span style="color:#e6db74">&#34;CL-ASDJI Make a new Clickup blogpost&#34;</span>
+</span></span><span style="display:flex;"><span>$ git push
+</span></span></code></pre></div><p>One small complaint I&rsquo;ve had is for every new branch I create, I have to:</p>
 <ul>
 <li>leave my terminal</li>
 <li>log onto the project management tool website</li>
@@ -303,73 +293,35 @@ response bodies of the API. However, they are not the most user friendly and for
 the initial task at hand, you only need a subset of the information.</p>
 <p>To handle this, I allow users of the CLI to pass in a format parameter that allows you print
 json or human-friendly messages.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ clickup --help
-</span></span><span class="line"><span class="cl">Usage: clickup <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  A <span class="nb">command</span> line tool <span class="k">for</span> interacting with clickup
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Options:
-</span></span><span class="line"><span class="cl">  --format <span class="o">[</span>human<span class="p">|</span>json<span class="o">]</span>
-</span></span><span class="line"><span class="cl">  --api_key TEXT         An API KEY <span class="k">for</span> clickup  <span class="o">[</span>required<span class="o">]</span>
-</span></span><span class="line"><span class="cl">  --help                 Show this message and exit.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Commands:
-</span></span><span class="line"><span class="cl">  fuse      Create a FUSE filesystem <span class="k">for</span> clickup resources
-</span></span><span class="line"><span class="cl">  projects  Get a space<span class="s1">&#39;s projects
-</span></span></span><span class="line"><span class="cl"><span class="s1">  spaces    Get a team&#39;</span>s spaces
-</span></span><span class="line"><span class="cl">  tasks     Get a team<span class="s1">&#39;s spaces
-</span></span></span><span class="line"><span class="cl"><span class="s1">  team      Get a user&#39;</span>s team
-</span></span><span class="line"><span class="cl">  teams     Get a user<span class="err">&#39;</span>s teams
-</span></span><span class="line"><span class="cl">  user      Get a user
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>At this stage, you could easily use it to solve my initial problem : getting the task id
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ clickup --help
+</span></span><span style="display:flex;"><span>Usage: clickup <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span> COMMAND <span style="color:#f92672">[</span>ARGS<span style="color:#f92672">]</span>...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  A command line tool <span style="color:#66d9ef">for</span> interacting with clickup
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Options:
+</span></span><span style="display:flex;"><span>  --format <span style="color:#f92672">[</span>human|json<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  --api_key TEXT         An API KEY <span style="color:#66d9ef">for</span> clickup  <span style="color:#f92672">[</span>required<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  --help                 Show this message and exit.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Commands:
+</span></span><span style="display:flex;"><span>  fuse      Create a FUSE filesystem <span style="color:#66d9ef">for</span> clickup resources
+</span></span><span style="display:flex;"><span>  projects  Get a space<span style="color:#e6db74">&#39;s projects
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  spaces    Get a team&#39;</span>s spaces
+</span></span><span style="display:flex;"><span>  tasks     Get a team<span style="color:#e6db74">&#39;s spaces
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  team      Get a user&#39;</span>s team
+</span></span><span style="display:flex;"><span>  teams     Get a user<span style="color:#960050;background-color:#1e0010">&#39;</span>s teams
+</span></span><span style="display:flex;"><span>  user      Get a user
+</span></span></code></pre></div><p>At this stage, you could easily use it to solve my initial problem : getting the task id
 so you can create your branches</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ clickup --format human teams
-</span></span><span class="line"><span class="cl"><span class="m">13333337</span> acme.corp <span class="m">17</span> users
-</span></span><span class="line"><span class="cl">dcardoza@neutrino.local:clickupy $ clickup --format human tasks <span class="m">13333337</span>
-</span></span><span class="line"><span class="cl">abcdef Design battle plans <span class="k">for</span> fighting the night king
-</span></span><span class="line"><span class="cl">zyzyza Perform cool ritual to get <span class="nb">help</span> from the lord of light 
-</span></span><span class="line"><span class="cl">humanb Sacrifice the bulk of your cavalary in a pointless charge <span class="o">(</span>but it will look cool<span class="o">)</span>
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl">$ git checkout -b CL-abcdef/design-battle-plans
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>And bam, we are now done. Right?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ clickup --format human teams
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">13333337</span> acme.corp <span style="color:#ae81ff">17</span> users
+</span></span><span style="display:flex;"><span>dcardoza@neutrino.local:clickupy $ clickup --format human tasks <span style="color:#ae81ff">13333337</span>
+</span></span><span style="display:flex;"><span>abcdef Design battle plans <span style="color:#66d9ef">for</span> fighting the night king
+</span></span><span style="display:flex;"><span>zyzyza Perform cool ritual to get help from the lord of light 
+</span></span><span style="display:flex;"><span>humanb Sacrifice the bulk of your cavalary in a pointless charge <span style="color:#f92672">(</span>but it will look cool<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>$ git checkout -b CL-abcdef/design-battle-plans
+</span></span></code></pre></div><p>And bam, we are now done. Right?</p>
 <p>No. It was at this time my roomate <a href="https://www.linkedin.com/in/adrian-ziegler-millard-3822ba163/">Adrian</a>
 started discussing FUSE filesystems with me. They sounded like a cool idea. I thought
 it would be cool if you could take an API and provide a filesystem interface to it.
@@ -397,138 +349,70 @@ typically give you the path of the file in question. Handling requests for a fil
 were similar to how requests are handled for the HTTP API.</p>
 <p>Most web frameworks provide a way to map a route with a handler. I decided to use
 the same for this project.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># HTTP Router for Tornado</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">make_app</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">tornado</span><span class="o">.</span><span class="n">web</span><span class="o">.</span><span class="n">Application</span><span class="p">([</span>
-</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="sa">r</span><span class="s2">&#34;/&#34;</span><span class="p">,</span> <span class="n">MainHandler</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="sa">r</span><span class="s2">&#34;/foo&#34;</span><span class="p">,</span> <span class="n">FooHandler</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">])</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># File Router for Clickupy</span>
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Router</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">    A router that matches filesystem operations at a given path
-</span></span></span><span class="line"><span class="cl"><span class="s2">    to a handler
-</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">client</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">handlers</span> <span class="o">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="sa">r</span><span class="s2">&#34;^/$&#34;</span><span class="p">,</span> <span class="n">BaseHandler</span><span class="p">(</span><span class="n">client</span><span class="p">)),</span>
-</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="sa">r</span><span class="s2">&#34;^/user$&#34;</span><span class="p">,</span> <span class="n">UserHandler</span><span class="p">(</span><span class="n">client</span><span class="p">)),</span>
-</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="sa">r</span><span class="s2">&#34;^/teams\/?$&#34;</span><span class="p">,</span> <span class="n">TeamsHandler</span><span class="p">(</span><span class="n">client</span><span class="p">)),</span>
-</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="sa">r</span><span class="s2">&#34;^/teams/[0-9]+$&#34;</span><span class="p">,</span> <span class="n">TeamHandler</span><span class="p">(</span><span class="n">client</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="p">]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="usefulness-of-different-interfaces">Usefulness of different interfaces</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># HTTP Router for Tornado</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_app</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> tornado<span style="color:#f92672">.</span>web<span style="color:#f92672">.</span>Application([
+</span></span><span style="display:flex;"><span>        (<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;/&#34;</span>, MainHandler),
+</span></span><span style="display:flex;"><span>        (<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;/foo&#34;</span>, FooHandler)
+</span></span><span style="display:flex;"><span>    ])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># File Router for Clickupy</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Router</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    A router that matches filesystem operations at a given path
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    to a handler
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, client):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>client <span style="color:#f92672">=</span> client
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>handlers <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;^/$&#34;</span>, BaseHandler(client)),
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;^/user$&#34;</span>, UserHandler(client)),
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;^/teams\/?$&#34;</span>, TeamsHandler(client)),
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;^/teams/[0-9]+$&#34;</span>, TeamHandler(client))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        ]
+</span></span></code></pre></div><h4 id="usefulness-of-different-interfaces">Usefulness of different interfaces</h4>
 <p>This project eventually provided an python API, a CLI and a fuse filesystem
 to access the same data. Each could be consumed by a different type of user, with
 varying levels of control.</p>
 <h3 id="finished-product">Finished Product</h3>
 <p>Now, users can do the following and look at a subset of their Clickup resources
 on the filesystem</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dcardoza@neutrino.local:clickupy $ clickup fuse cl-fs &gt; /dev/null 2&gt;&amp;1 &amp;
-</span></span><span class="line"><span class="cl">[1] 27590
-</span></span><span class="line"><span class="cl">dcardoza@neutrino.local:clickupy $ tree cl-fs/
-</span></span><span class="line"><span class="cl">cl-fs/
-</span></span><span class="line"><span class="cl">├── teams
-</span></span><span class="line"><span class="cl">│   └── 13337
-</span></span><span class="line"><span class="cl">│   └── 13123
-</span></span><span class="line"><span class="cl">│   └── 1113
-</span></span><span class="line"><span class="cl">│   └── 99991
-</span></span><span class="line"><span class="cl">└── user
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">1 directory, 2 files
-</span></span><span class="line"><span class="cl">dcardoza@neutrino.local:clickupy $ cat cl-fs/user 
-</span></span><span class="line"><span class="cl">{
-</span></span><span class="line"><span class="cl">  &#34;user&#34;: {
-</span></span><span class="line"><span class="cl">    &#34;id&#34;: 1,
-</span></span><span class="line"><span class="cl">    &#34;username&#34;: &#34;Daniel Cardoza&#34;,
-</span></span><span class="line"><span class="cl">    &#34;color&#34;: &#34;#ff8asd&#34;,
-</span></span><span class="line"><span class="cl">    &#34;profilePicture&#34;: &#34;https://cool-glasses.jpg&#34;,
-</span></span><span class="line"><span class="cl">    &#34;initials&#34;: &#34;DC&#34;,
-</span></span><span class="line"><span class="cl">    &#34;week_start_day&#34;: null,
-</span></span><span class="line"><span class="cl">    &#34;global_font_support&#34;: false
-</span></span><span class="line"><span class="cl">  }
-</span></span><span class="line"><span class="cl">}dcardoza@neutrino.local:clickupy $ cat cl-fs/teams/13337
-</span></span><span class="line"><span class="cl">{
-</span></span><span class="line"><span class="cl">  &#34;team&#34;: {
-</span></span><span class="line"><span class="cl">    &#34;id&#34;: &#34;13337&#34;,
-</span></span><span class="line"><span class="cl">    &#34;name&#34;: &#34;Foo co&#34;,
-</span></span><span class="line"><span class="cl">    &#34;color&#34;: &#34;#ffffff&#34;,
-</span></span><span class="line"><span class="cl">    &#34;avatar&#34;: &#34;www.image.ca&#34;,
-</span></span><span class="line"><span class="cl">    &#34;members&#34;: [
-</span></span><span class="line"><span class="cl">        ...
-</span></span><span class="line"><span class="cl">    ]
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="closing-thoughts">Closing thoughts</h1>
+<pre tabindex="0"><code>dcardoza@neutrino.local:clickupy $ clickup fuse cl-fs &gt; /dev/null 2&gt;&amp;1 &amp;
+[1] 27590
+dcardoza@neutrino.local:clickupy $ tree cl-fs/
+cl-fs/
+├── teams
+│   └── 13337
+│   └── 13123
+│   └── 1113
+│   └── 99991
+└── user
+
+1 directory, 2 files
+dcardoza@neutrino.local:clickupy $ cat cl-fs/user 
+{
+  &#34;user&#34;: {
+    &#34;id&#34;: 1,
+    &#34;username&#34;: &#34;Daniel Cardoza&#34;,
+    &#34;color&#34;: &#34;#ff8asd&#34;,
+    &#34;profilePicture&#34;: &#34;https://cool-glasses.jpg&#34;,
+    &#34;initials&#34;: &#34;DC&#34;,
+    &#34;week_start_day&#34;: null,
+    &#34;global_font_support&#34;: false
+  }
+}dcardoza@neutrino.local:clickupy $ cat cl-fs/teams/13337
+{
+  &#34;team&#34;: {
+    &#34;id&#34;: &#34;13337&#34;,
+    &#34;name&#34;: &#34;Foo co&#34;,
+    &#34;color&#34;: &#34;#ffffff&#34;,
+    &#34;avatar&#34;: &#34;www.image.ca&#34;,
+    &#34;members&#34;: [
+        ...
+    ]
+</code></pre><h1 id="closing-thoughts">Closing thoughts</h1>
 <p>This was a fun project to make, and allowed me to learn more about Clickup and FUSE.
 Although I will probably stop working on this project, there are a few extensions of it
 worth thinking about</p>

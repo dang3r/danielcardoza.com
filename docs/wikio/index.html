@@ -38,7 +38,7 @@
   <meta itemprop="description" content="Wikireducer, Wikio">
   <meta itemprop="datePublished" content="2018-01-31T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-03-07T16:15:07-08:00">
-  <meta itemprop="wordCount" content="510">
+  <meta itemprop="wordCount" content="477">
   <meta itemprop="keywords" content="Blog,Project">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -271,86 +271,41 @@ links. This can be converted to an <code>xpath</code> expression for use by Noko
 the helper library powering it. The code can be found
 <a href="https://github.com/dang3r/wikio">here</a>!</p>
 <p>An example of using <code>Wikireducer</code> is below:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Finding the number of steps
-</span></span><span class="line"><span class="cl">$ gem install wikio
-</span></span><span class="line"><span class="cl">$ wikireducer --dst=Knowledge Cat Dog
-</span></span><span class="line"><span class="cl">Searching for https://en.wikipedia.org/wiki/Knowledge
-</span></span><span class="line"><span class="cl">$ wikireducer --dst=Knowledge Cat Dog
-</span></span><span class="line"><span class="cl">Searching for https://en.wikipedia.org/wiki/Knowledge
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Dog
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Cat
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Fur
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Canis
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Hair
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Genus
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Knowledge in 14 steps
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Knowledge in 14 steps
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Sometimes, cycles are detected when performing a search</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Identifying Cycles
-</span></span><span class="line"><span class="cl">$ gem install wikio
-</span></span><span class="line"><span class="cl">$ wikireducer --dst=Philosophy Dog Cat
-</span></span><span class="line"><span class="cl">Searching for https://en.wikipedia.org/wiki/Philosophy
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Dog
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Cat
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Canis
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Fur
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Hair
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Genus
-</span></span><span class="line"><span class="cl">....
-</span></span><span class="line"><span class="cl">Cycle detected for https://en.wikipedia.org/wiki/Dog at node
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Ancient_Greek_language
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Greek_language
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Modern_Greek
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Colloquialism
-</span></span><span class="line"><span class="cl">https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Vernacular
-</span></span><span class="line"><span class="cl">Cycle detected for https://en.wikipedia.org/wiki/Cat at node
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>You can install Wikio+Wikireducer via <code>gem install wikio</code>.</p>
+<pre tabindex="0"><code># Finding the number of steps
+$ gem install wikio
+$ wikireducer --dst=Knowledge Cat Dog
+Searching for https://en.wikipedia.org/wiki/Knowledge
+$ wikireducer --dst=Knowledge Cat Dog
+Searching for https://en.wikipedia.org/wiki/Knowledge
+https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Dog
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Cat
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Fur
+https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Canis
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Hair
+https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Genus
+...
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Knowledge in 14 steps
+https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Knowledge in 14 steps
+</code></pre><p>Sometimes, cycles are detected when performing a search</p>
+<pre tabindex="0"><code># Identifying Cycles
+$ gem install wikio
+$ wikireducer --dst=Philosophy Dog Cat
+Searching for https://en.wikipedia.org/wiki/Philosophy
+https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Dog
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Cat
+https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Canis
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Fur
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Hair
+https://en.wikipedia.org/wiki/Dog -&gt; https://en.wikipedia.org/wiki/Genus
+....
+Cycle detected for https://en.wikipedia.org/wiki/Dog at node
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Ancient_Greek_language
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Greek_language
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Modern_Greek
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Colloquialism
+https://en.wikipedia.org/wiki/Cat -&gt; https://en.wikipedia.org/wiki/Vernacular
+Cycle detected for https://en.wikipedia.org/wiki/Cat at node
+</code></pre><p>You can install Wikio+Wikireducer via <code>gem install wikio</code>.</p>
 <h1 id="conclusion">Conclusion</h1>
 <p>This was a fun experiment to delve into Ruby with.</p>
 <p>Writing this post also made me realize I wish I could caption images in

@@ -38,7 +38,7 @@
   <meta itemprop="description" content="Jenophone - SMS forwarder">
   <meta itemprop="datePublished" content="2018-01-09T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-03-07T16:15:07-08:00">
-  <meta itemprop="wordCount" content="436">
+  <meta itemprop="wordCount" content="434">
   <meta itemprop="keywords" content="Blog,Project">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -274,17 +274,9 @@ the SMS forwarding capabilties I described above. I implemented this using
 <code>Golang</code> and the standard library. The code can be seen
 <a href="https://github.com/dang3r/jenophone">here</a>.</p>
 <p>Starting Jenophone is as simple as:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">go build jenophone.go
-</span></span><span class="line"><span class="cl">./jenophone -num1=&lt;user 1 phone number&gt; -num2=&lt;user 2 phone number&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>To use, my girlfriend and I only had to start texting our provisioned Quebec number.</p>
+<pre tabindex="0"><code>go build jenophone.go
+./jenophone -num1=&lt;user 1 phone number&gt; -num2=&lt;user 2 phone number&gt;
+</code></pre><p>To use, my girlfriend and I only had to start texting our provisioned Quebec number.</p>
 <p>I decided to utilize my free <code>Google Compute Cloud</code> credits for deployment and
 <code>LetsEncrypt</code> for generating the TLS keys required. I may add some basic
 Terraform configuration in a future PR to ease the infrastructure work.</p>

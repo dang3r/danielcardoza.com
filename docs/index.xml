@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Using ffmpeg to generate a lifting compilation video</title>
+      <link>/ffmpeg-lifting/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/ffmpeg-lifting/</guid>
+      <description>&lt;p&gt;I have a friend who is my (power)lifting coach. Coaches and trainers are very useful for exercise selection, bouncing new ideas off of and to help guide you along. Improving one&amp;rsquo;s lifting numbers is non-linear and I love having someone I can always discuss approaches with. Results boil down to the usual suspects (eg. consistency, intensity, recovery, etc.) but i&amp;rsquo;ve found it very beneficial.&lt;/p&gt;&#xA;&lt;p&gt;We use a spreadsheet to communicate exercises, and numbers for the each training week. At the end of each week, I send an email with all of my lifts, notes and videos of specific lifts. The videos reside on Google Photos and I generate a shareable link, embed it in the email and share it with him. This has worked fine, but didn&amp;rsquo;t feel &lt;em&gt;great&lt;/em&gt;. Why not make a single video containing all weekly lifts instead of having him click on links to short clips? I did not want to do this with a video editor, and thus began my dive into &lt;code&gt;ffmpeg&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Adventures with Math Academy</title>
       <link>/math_academy/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>

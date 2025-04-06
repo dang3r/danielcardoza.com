@@ -38,7 +38,7 @@
   <meta itemprop="description" content="Cerca - Search website links">
   <meta itemprop="datePublished" content="2017-11-18T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-03-07T16:15:07-08:00">
-  <meta itemprop="wordCount" content="258">
+  <meta itemprop="wordCount" content="244">
   <meta itemprop="keywords" content="Blog,Project">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -266,48 +266,22 @@ link.</li>
 <p>The code can be seen <a href="https://github.com/dang3r/cerca">here</a>!</p>
 <p>As part of this project, I also wanted to learn how to make a python module. It
 is actually fairly straightforward:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1"># Contains your package information</span>
-</span></span><span class="line"><span class="cl"><span class="o">$</span> <span class="n">vim</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># Create the distribution, register a python account, and upload</span>
-</span></span><span class="line"><span class="cl"><span class="o">$</span> <span class="n">python3</span><span class="o">.</span><span class="mi">6</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">sdist</span> <span class="n">register</span> <span class="n">upload</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="example">Example</h1>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">$</span> <span class="n">pip3</span> <span class="n">install</span> <span class="n">cerca</span>
-</span></span><span class="line"><span class="cl"><span class="o">$</span> <span class="n">cerca</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span>
-</span></span><span class="line"><span class="cl"><span class="mi">200</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span>
-</span></span><span class="line"><span class="cl"><span class="mi">200</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span><span class="o">/</span><span class="n">preferences</span><span class="err">?</span><span class="n">hl</span><span class="o">=</span><span class="n">en</span>
-</span></span><span class="line"><span class="cl"><span class="mi">200</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span><span class="o">/</span><span class="n">advanced_search</span><span class="err">?</span><span class="n">hl</span><span class="o">=</span><span class="n">en</span><span class="o">&amp;</span><span class="n">authuser</span><span class="o">=</span><span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">404</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span><span class="o">/</span><span class="n">language_tools</span><span class="err">?</span><span class="n">hl</span><span class="o">=</span><span class="n">en</span><span class="o">&amp;</span><span class="n">authuser</span><span class="o">=</span><span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">200</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span><span class="o">/</span><span class="n">intl</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">ads</span><span class="o">/</span>
-</span></span><span class="line"><span class="cl"><span class="mi">200</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span><span class="o">/</span><span class="n">services</span><span class="o">/</span>
-</span></span><span class="line"><span class="cl"><span class="mi">200</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="o">.</span><span class="n">ca</span><span class="o">/</span><span class="n">intl</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">about</span><span class="o">.</span><span class="n">html</span>
-</span></span><span class="line"><span class="cl"><span class="o">...</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="resources">Resources</h1>
+<pre tabindex="0"><code># Contains your package information
+$ vim setup.py
+# Create the distribution, register a python account, and upload
+$ python3.6 setup.py sdist register upload
+</code></pre><h1 id="example">Example</h1>
+<pre tabindex="0"><code>$ pip3 install cerca
+$ cerca https://google.ca
+200 https://google.ca
+200 https://google.ca/preferences?hl=en
+200 https://google.ca/advanced_search?hl=en&amp;authuser=0
+404 https://google.ca/language_tools?hl=en&amp;authuser=0
+200 https://google.ca/intl/en/ads/
+200 https://google.ca/services/
+200 https://google.ca/intl/en/about.html
+...
+</code></pre><h1 id="resources">Resources</h1>
 <ul>
 <li><a href="https://marthall.github.io/blog/how-to-package-a-python-app/">https://marthall.github.io/blog/how-to-package-a-python-app/</a></li>
 <li><a href="https://docs.python.org/3/">https://docs.python.org/3/</a></li>
