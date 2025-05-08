@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Making a custom fitbit watchface | dan&#39;s internet pad</title>
+<meta name="title" content="Making a custom fitbit watchface" />
+<meta name="description" content="fitbit" />
+<meta name="keywords" content="blog," />
+
+
+<meta property="og:url" content="//localhost:1313/fitbit-watchface/">
+  <meta property="og:site_name" content="dan&#39;s internet pad">
+  <meta property="og:title" content="Making a custom fitbit watchface">
+  <meta property="og:description" content="fitbit">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-11T00:00:00+00:00">
+    <meta property="article:tag" content="Blog">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Making a custom fitbit watchface">
+  <meta name="twitter:description" content="fitbit">
+      <meta name="twitter:site" content="@_dcardoza">
+
+
+
+
+  <meta itemprop="name" content="Making a custom fitbit watchface">
+  <meta itemprop="description" content="fitbit">
+  <meta itemprop="datePublished" content="2024-07-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="442">
+  <meta itemprop="keywords" content="Blog">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>dan&#39;s internet pad</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/posts/">Posts</a>
+
+<a href="/projects/">Projects</a>
+
+<a href="/tags/">Tags</a>
+
+
+</nav>
+</header>
+  <main>
+
+<content>
+  <h1 id="making-a-fitbit-watchface">making a fitbit watchface</h1>
+<p>disclaimer: this is a dev log, not polished.</p>
+<h2 id="why">why</h2>
+<p>I was reading <code>Master of Doom</code> about ID Software and the legends John Romen and John Carmack.
+The author describes the game-making process and how new engine technology designed
+by Carmack enabled new games designed by Romero. This made me think about my
+meager experience in graphics, and UI in general.</p>
+<p>I mostly work on backend and infrastructure and wanted to do a toy project.
+Somehow, I realized that the clockface for my fitbit watch could be a fun thing to do.
+Pomodoros have also been the talk of the town on Toronto tech twitter, so I wanted
+to use that to get more done.</p>
+<p>Thus began my journey to make a custom clockface for my fitbit.</p>
+<h2 id="dev-notes">dev notes</h2>
+<ul>
+<li>Getting the necessary tools up on linux was fine. The only issue that the fitbit simulator
+only works on windows and osx. I am debugging against my actual fitbit sense which is actually not too bad</li>
+<li>to debug against your actual device, you have to connect the fitbit to wifi</li>
+<li>then, when you when <code>npx fitbit</code>, running <code>bi</code> will build and install the
+custom clockface on your device</li>
+<li>all of my UI elements leverage hardcoded x and y percentages for the elements in html.
+this is crude but also easy to debug and tweak. I know minimal css and html,
+flexbox was the extent of my alignment knowledge</li>
+<li>I like the idea of a graphic that changes as the day progresses
+<ul>
+<li>instead of having a sprite move across the cityscape, make the city more dynamic and
+take up the full screen? Have the sprite move along a path that changes</li>
+</ul>
+</li>
+<li>use colours to indicate progress on the different metrics (eg. reg when my bpm is high)</li>
+</ul>
+<h2 id="iterations">iterations</h2>
+<h3 id="iteration-1">iteration 1</h3>
+<ul>
+<li>I wanted to get a background image + the time on the screen.</li>
+</ul>
+<p><img src="/images/fitbit/0.jpg" alt="fitbit-iteration-1"></p>
+<h3 id="iteration-2">iteration 2</h3>
+<ul>
+<li>started computing different metrics I care about. The 4 I converged on were
+<ul>
+<li>time</li>
+<li>bpm</li>
+<li>calories/ calorie goal</li>
+<li>steps / step goal</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/fitbit/1.jpg" alt="fitbit-iteration-2"></p>
+<h3 id="iteration-3">iteration 3</h3>
+<ul>
+<li>I wanted a cooler color scheme with a background image. Went with a BW image of a cityscape.</li>
+</ul>
+<p><img src="/images/fitbit/2.jpg" alt="fitbit-iteration-3"></p>
+<h3 id="iteration-4">iteration 4</h3>
+<ul>
+<li>I also added htop like progress bars for the different stats. Fitbit does not have
+monospace fonts which makes it painful to align the bars</li>
+</ul>
+<p><img src="/images/fitbit/3.jpg" alt="fitbit-iteration-4"></p>
+<h3 id="iteration-5">iteration 5</h3>
+<ul>
+<li>Swapped the cityscape image</li>
+<li>To fix the alignment issue, I used svg lines instead of text. This made it easier to align
+the progress bars</li>
+<li>I also added an sprite image of a motorcycle dude that moves across the screen
+based on the time. thanks midjourney</li>
+</ul>
+<p><img src="/images/fitbit/4.jpg" alt="fitbit-iteration-5"></p>
+<h3 id="iteration-6">iteration 6</h3>
+<ul>
+<li>Add colors to the different progress bars.</li>
+</ul>
+<p><img src="/images/fitbit/5.jpg" alt="fitbit-iteration-5"></p>
+
+</content>
+<p>
+  
+  <a href="//localhost:1313/tags/blog/">#Blog</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,4 +1,8 @@
 +++
+tags = [
+  "blog",
+]
+description = "fitbit"
 date = "2024-07-11"
 title = "Making a custom fitbit watchface"
 +++

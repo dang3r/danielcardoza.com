@@ -6,7 +6,7 @@
     <description>Recent content in Posts on dan&#39;s internet pad</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Apr 2025 14:34:11 -0400</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using ffmpeg to generate a lifting compilation video</title>
@@ -21,6 +21,13 @@
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
       <guid>/math_academy/</guid>
       <description>&lt;h1 id=&#34;adventures-with-math-academy&#34;&gt;Adventures with Math Academy&lt;/h1&gt;&#xA;&lt;p&gt;Last year, I learned about &lt;a href=&#34;https://mathacademy.com/&#34;&gt;MathAcademy.com&lt;/a&gt;. It is a website that helps you learn math in a cooler way. Imagine you had a graph of all mathematical knowledge where the nodes are concepts and the edges represents prerequisites/dependencies. With that graph, if you learn a new concept you can determine what new ones to learn. Imagine creating a queue of new concepts to to learn by identifying adjacent child nodes to nodes whose concept you already know. Also, imagine the cool spaced repetition and other learning techniques you can apply by adding labels to a given node indicating when you last reviewed the concept and were proficient in it! Follow &lt;a href=&#34;https://github.com/dang3r/forge/blob/master/mathacademy/factoring.py&#34;&gt;Justin Skycak&lt;/a&gt; for more information. I love his blog.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making a custom fitbit watchface</title>
+      <link>/fitbit-watchface/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>/fitbit-watchface/</guid>
+      <description>&lt;h1 id=&#34;making-a-fitbit-watchface&#34;&gt;making a fitbit watchface&lt;/h1&gt;&#xA;&lt;p&gt;disclaimer: this is a dev log, not polished.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why&#34;&gt;why&lt;/h2&gt;&#xA;&lt;p&gt;I was reading &lt;code&gt;Master of Doom&lt;/code&gt; about ID Software and the legends John Romen and John Carmack.&#xA;The author describes the game-making process and how new engine technology designed&#xA;by Carmack enabled new games designed by Romero. This made me think about my&#xA;meager experience in graphics, and UI in general.&lt;/p&gt;&#xA;&lt;p&gt;I mostly work on backend and infrastructure and wanted to do a toy project.&#xA;Somehow, I realized that the clockface for my fitbit watch could be a fun thing to do.&#xA;Pomodoros have also been the talk of the town on Toronto tech twitter, so I wanted&#xA;to use that to get more done.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Google Data Studio : Powerful and easy data visualization</title>
